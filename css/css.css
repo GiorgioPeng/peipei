@@ -1,0 +1,341 @@
+html{font-size:10px}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transition: all 1s linear;
+}
+body{
+  background-image: url(img/蓝背景.png);
+  background-repeat: no-repeat;
+  background-size: 100% 22vh;
+}
+#container{
+  margin: 12vh auto;
+  margin-bottom: 0;
+  width: 87.47vw;
+  height: 68.37vh;
+  background-image: url(img/框.png);
+  background-repeat: no-repeat;
+  background-size:87.47vw 68.37vh;
+}
+.topLogo{
+  height: 9.84vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topLogo div{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.initialLogo{
+  max-width: 5.5vmin;
+}
+.clickLogo{
+  max-width: 7.6vmin;
+}
+.left{
+  width: 20%;
+  height: 58.65vh;
+  float: left;
+}
+.left img{
+  margin-left: 86%;
+  max-height: 44vh;
+}
+.right{
+  margin-left: 6vw;
+  margin-right: 6.12vw;
+  width: 56.78vw;
+  height: 58.65vh;
+  float: left;
+}
+.information{
+  margin-top: 6vh;
+  width: 48.84vw;
+  height:3.5vh;
+  background-image: url(img/设置.png);
+  background-size:48.84vw 3.5vh
+}
+.setTime1{
+  margin-top: 4.1vh;
+  width: 57vw;
+  height: 17.39vh;
+  background-image: url(img/山.png);
+  background-size: 57vw 17.39vh;
+}
+.setTime2{
+  margin-top: 4.1vh;
+  width: 57vw;
+  height: 17.39vh;
+  background-image: url(img/星星.png);
+  background-size: 57vw 17.39vh;
+}
+.setTime p{
+  position: relative;
+  top: 14vh;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-weight: 200;
+  letter-spacing:0.5rem;
+}
+#button{
+  width: 53.46vw;
+  height: 8.15vh;
+  margin: 6.31vh auto;
+  background-image: url(img/下一项按钮.png);
+  background-size: 53.46vw 8.15vh;
+}
+#container1{
+  display: none;
+  margin: 12.45vh auto;
+  margin-bottom: 0;
+  background-image: url(img/底框.png);
+  background-size: 87.21vw 71.82vh;
+  width: 87.21vw;
+  height: 71.82vh;
+  position: relative;
+}
+#top{
+  background-image: url(img/顶框.png);
+  background-size:100% 7.46vh;
+  width: 100%;
+  height: 7.46vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.time{
+  width:25.49vw;
+  height:4vh;
+}
+#getUp{
+  background-image: url(img/起床时间段.png);
+  background-size: 25.49vw 4vh;
+}
+#goBed{
+  background-image: url(img/睡眠时间段.png);
+  background-size: 25.49vw 4vh;
+}
+#chooseTime{
+  margin: 7.22vh auto;
+  margin-bottom: 0;
+  background-image: url(img/大时间.png);
+  background-size: 55.42vw 19.52vh;
+  height: 19.52vh;
+  width: 55.42vw;
+  display: grid;
+  grid-template-columns:11.43vw 11.43vw 11.43vw 11.43vw;
+  grid-template-rows: 9vh 9vh;
+  grid-row-gap:1.8vh;
+  grid-column-gap: 0.62vw;
+  position: relative;
+  z-index: 5;
+}
+#chooseTime div{
+  width: 11.43vw;
+  height: 9vh;
+  text-align: center;
+  font-size: 5vh;
+}
+#chooseTime div p{
+  margin: 1.3vh auto;
+  margin-bottom: 0;
+  color:#ffffff;
+  position: relative;
+  z-index: 1;
+}
+#chooseTime div:nth-child(3){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTime div:nth-child(4){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTime div:nth-child(7){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTime div:nth-child(8){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTimeShadow{
+  margin: -19.6vh auto;
+  margin-bottom: 0;
+  height: 19.52vh;
+  width: 55.42vw;
+  display: grid;
+  grid-template-columns:11.43vw 11.43vw 11.43vw 11.43vw;
+  grid-template-rows: 9vh 9vh;
+  grid-row-gap:1.8vh;
+  grid-column-gap: 0.62vw;
+  position: relative;
+  z-index: 5;
+
+}
+#chooseTimeShadow div{
+  width: 11.8vw;
+  height: 4.1vh;
+  background-position: bottom;
+  background-image: url(img/蓝线.png);
+  background-size: 55.42vw 0.16vh;
+  background-repeat: no-repeat;
+  background-color: #dde8fa;
+  opacity: 0.5;
+  position: relative;
+  z-index: 3;
+}
+#chooseTimeShadow div:nth-child(3){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#chooseTimeShadow div:nth-child(4){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#chooseTimeShadow div:nth-child(7){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#chooseTimeShadow div:nth-child(8){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#back{
+  position: absolute;
+  background-image: url(img/返回.png);
+  background-size: 7.14vmin 7.14vmin;
+  width: 7.14vmin;
+  height: 7.14vmin;
+  left: 1.6vw;
+  top:50%;
+  margin-top: -3.57vmin;
+}
+#chooseNumberTime{
+  height: 200px;
+  width:180px;
+  position: relative;
+  top:2.5vh;
+  left: 32.95vw;
+}
+@media screen and (min-device-height:750px) {
+  #chooseNumberTime{
+    top:4vh;
+  }
+}
+@media screen and (min-device-width:768px) {
+  #chooseNumberTime{
+    height: 400px;
+    width: 400px;
+  }
+}
+#chooseNumberTime div{
+  text-align: center;
+}
+
+
+.time1{
+  width: 70%;
+  text-align: center;
+  font-size: 4.29vw;
+  color: #d4d2d6;
+  position: absolute;
+  top: 3vh;
+  left: 9vw;
+}
+.time2{
+  width: 70%;
+  text-align: center;
+  font-size: 5vw;
+  color: #d4d2d6;
+  position: absolute;
+  top: 7vh;
+  left: 6vw;
+}
+.time3{
+  width: 70%;
+  text-align: center;
+  font-size: 5.71vw;
+  color: #90b4f0;
+  position: absolute;
+  top: 13.5vh;
+  left: 5.4vw;
+}
+.time4{
+  width: 70%;
+  text-align: center;
+  font-size: 5vw;
+  color: #d4d2d6;
+  position: absolute;
+  top: 20vh;
+  left: 6vw;
+}
+.time5{
+  width: 70%;
+  text-align: center;
+  font-size: 4.29vw;
+  color: #d4d2d6;
+  position: absolute;
+  top: 24vh;
+  left: 9vw;
+}
+@media screen and (min-device-height:760px) {
+  .time3{
+  font-size: 5.71vw;
+  color: #90b4f0;
+  position: absolute;
+  top: 12.5vh;
+  left: 5.4vw;
+  }
+  .time4{
+    font-size: 5vw;
+    color: #d4d2d6;
+    position: absolute;
+    top: 18vh;
+    left: 6vw;
+  }
+  .time5{
+    font-size: 4.29vw;
+    color: #d4d2d6;
+    position: absolute;
+    top: 22vh;
+    left: 9vw;}
+}
+#AM{
+  width: 12.88vw;
+  height: 3.4vh;
+  font-size: 3.8vw;
+  text-align: center;
+  background-image: url(img/蓝线.png);
+  background-size:   12.86vw  0.25vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #ceccd1;
+  position: absolute;
+  top:51.5vh;
+  left: 12.86vw;
+}
+#setTimeButton{
+  background-image: url(img/保存.png);
+  background-size:53.2vw 7.15vh;
+  margin: 2.79vh auto;
+  width: 53.2vw;
+  height: 7.15vh;
+}
