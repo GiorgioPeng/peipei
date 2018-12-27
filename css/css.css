@@ -1,3 +1,4 @@
+/* *{  transition: all 1s linear;} */
 html{font-size:10px}
 @media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
 @media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
@@ -12,8 +13,8 @@ html,body{
   overflow: hidden;
   margin: 0;
   padding: 0;
-  transition: all 1s linear;
 }
+
 body{
   background-image: url(img/蓝背景.png);
   background-repeat: no-repeat;
@@ -163,6 +164,7 @@ body{
   color:#ffffff;
   position: relative;
   z-index: 1;
+  transition: all 1s linear;
 }
 #chooseTime div:nth-child(3){
   transform: translateX(7.8vw);
@@ -252,6 +254,7 @@ body{
 }
 #chooseNumberTime div{
   text-align: center;
+  transition: all 0.2s linear;
 }
 
 
