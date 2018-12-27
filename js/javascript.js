@@ -5,16 +5,34 @@ var setTimeButton = $("#setTimeButton");
 var back = $("#back");
 var setTime1 = $(".setTime1");
 setTime1[0].addEventListener("click",function(){
+  let left = 200;
   container.fadeOut();
   button.fadeOut();
-  container1.fadeIn();
-  setTimeButton.fadeIn();
+  let set = setInterval(function () {
+    left-=5;
+    container1[0].style.left=left+"%";
+    if(left===0)
+    {
+      clearInterval(set);
+    }
+    container1.fadeIn();
+    setTimeButton.fadeIn();
+  }, 20);
 },false);               //两个页面的显示交替部分
 back[0].addEventListener("click",function(){
-  container1.fadeOut();
-  setTimeButton.fadeOut();
-  container.fadeIn();
-  button.fadeIn();
+  let left=0;
+  let set2 = setInterval(function () {
+    left+=5;
+    container1[0].style.left=left+"%";
+    if(left===100)
+    {
+      container1.fadeOut();
+      clearInterval(set2);
+      setTimeButton.fadeOut();
+      container.fadeIn();
+      button.fadeIn();
+    }
+  }, 10);
 },false);               //两个页面的显示交替部分
 
 
