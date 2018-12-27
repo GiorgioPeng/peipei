@@ -27,6 +27,8 @@ body{
   background-image: url(img/框.png);
   background-repeat: no-repeat;
   background-size:87.47vw 68.37vh;
+  position: relative;
+  z-index: 2;
 }
 .topLogo{
   height: 9.84vh;
@@ -110,6 +112,8 @@ body{
   width: 87.21vw;
   height: 71.82vh;
   position: relative;
+  left:80%;
+  z-index: 5;
 }
 #top{
   background-image: url(img/顶框.png);
