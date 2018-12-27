@@ -4,7 +4,7 @@ var container1 = $("#container1");
 var setTimeButton = $("#setTimeButton");
 var back = $("#back");
 var setTime1 = $(".setTime1");
-setTime1[0].addEventListener("click",function(){
+setTime1[0].addEventListener("touchstart",function(){
   let left = 200;
   container.fadeOut();
   button.fadeOut();
@@ -19,7 +19,7 @@ setTime1[0].addEventListener("click",function(){
     setTimeButton.fadeIn();
   }, 20);
 },false);               //两个页面的显示交替部分
-back[0].addEventListener("click",function(){
+back[0].addEventListener("touchstart",function(){
   let left=0;
   let set2 = setInterval(function () {
     left+=5;
@@ -42,7 +42,7 @@ var getUpTime = "";//提供给后端接口的起床时间
 
 var chooseTime = $("#chooseTime");
 var chooseNumberTime = $("#chooseNumberTime");
-chooseNumberTime[0].addEventListener("click",function(event){
+chooseNumberTime[0].addEventListener("touchend",function(event){
   let ev = event||window.event;
   let tar = ev.target||ev.srcElement;
   let center = $(".time3");
@@ -106,4 +106,4 @@ chooseNumberTime[0].addEventListener("click",function(event){
     }
     setTime1.find("p")[0].innerHTML=getUpTime;
   }
-},false)
+},false)            //进行一个时间的同步显示
