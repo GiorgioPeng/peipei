@@ -20,7 +20,7 @@ body{
   background-repeat: no-repeat;
   background-size: 100% 22vh;
 }
-#container{
+.container{
   margin: 12vh auto;
   margin-bottom: 0;
   width: 87.47vw;
@@ -97,10 +97,10 @@ body{
   font-weight: 200;
   letter-spacing:0.5rem;
 }
-#button{
+.button{
   width: 53.46vw;
   height: 8.15vh;
-  margin: 6.31vh auto;
+  margin: 60.31vh auto;
   background-image: url(img/下一项按钮.png);
   background-size: 53.46vw 8.15vh;
 }
@@ -342,7 +342,7 @@ body{
 #setTimeButton{
   background-image: url(img/保存.png);
   background-size:53.2vw 7.15vh;
-  margin: 2.79vh auto;
+  margin: 0.79vh auto;
   width: 53.2vw;
   height: 7.15vh;
 }
