@@ -1,13 +1,11 @@
-var container = $("#container");
-var button = $("#button");
+var sleep = $(".sleep");
 var container1 = $("#container1");
 var setTimeButton = $("#setTimeButton");
 var back = $("#back");
 var setTime1 = $(".setTime1");
 setTime1[0].addEventListener("touchstart",function(){
   let left = 200;
-  container.fadeOut();
-  button.fadeOut();
+  sleep.fadeOut();
   let set = setInterval(function () {
     left-=5;
     container1[0].style.left=left+"%";
@@ -29,8 +27,7 @@ back[0].addEventListener("touchstart",function(){
       container1.fadeOut();
       clearInterval(set2);
       setTimeButton.fadeOut();
-      container.fadeIn();
-      button.fadeIn();
+      sleep.fadeIn();
     }
   }, 10);
 },false);               //两个页面的显示交替部分
