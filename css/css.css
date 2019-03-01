@@ -100,7 +100,7 @@ body{
 .button{
   width: 53.46vw;
   height: 8.15vh;
-  margin: 60.31vh auto;
+  margin: 7.2vh auto;
   background-image: url(img/下一项按钮.png);
   background-size: 53.46vw 8.15vh;
 }
@@ -345,4 +345,55 @@ body{
   margin: 0.79vh auto;
   width: 53.2vw;
   height: 7.15vh;
+}
+.picture
+{
+  background-image: url(img/运动/运动图.png);
+  background-size:87.3vw 40.78vh;
+  margin: 0 auto;
+  height:40.78vh;
+  width: 87.3vw;
+}
+.word1{
+  margin: 2.1vh auto;
+  text-align: center;
+  background-color: rgb(248,246,249);
+  font-size: 2.6vw;
+  line-height: 180%;
+  color:rgb(150,150,150);
+  border-radius: 200px;
+  border-color: rgb(200,200,200);
+  border-style:solid;
+  border-width: thin;
+  height:2.95vh;
+  width:69vw;
+}
+.word2
+{
+  margin-top: 2vh;
+  margin-left: 3vw;
+  text-align: center;
+  background-color: rgb(248,246,249);
+  font-size: 2.6vw;
+  line-height: 180%;
+  color:rgb(150,150,150);
+  border-radius: 200px;
+  border-color: rgb(200,200,200);
+  border-style:solid;
+  border-width: thin;
+  width:27.44vw;
+  height:3vh;
+
+}
+#range
+{
+  position: relative;
+  left: 3vw;
+  width:81.97vw;
+}
+input[name="sportsTypes"]{
+  display: none;
+}
+.checkboxForSports{
+  max-width: 4.4vw;
 }
