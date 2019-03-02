@@ -9,7 +9,7 @@
   <title>demo</title>
 </head>
 <body>
-  <div class="container sleep" style="display:none">
+  <div class="container sleep">
     <div class="topLogo">
       <div><img class="initialLogo" src="img/个人信息.png" alt=""></div>
       <div><img class="clickLogo" src="img/早睡晚睡时间.png" alt=""></div>
@@ -25,7 +25,7 @@
         <div class="setTime1 setTime"><p>点击添加平均睡眠时段</p></div>
         <div class="setTime2 setTime"><p>点击添加平均睡眠时段</p></div>
     </div>
-    <div class="button"></div>
+    <div class="button SleepNext" style="position:relative;top:57vh;"></div>
   </div>
   <div id="container1">
     <div id="top">
@@ -67,7 +67,7 @@
     <div id="setTimeButton"></div>
 
   </div>
-  <div class="container sport">
+  <div class="container sport" style="display:none">
     <div class="topLogo">
       <div><img class="initialLogo" src="img/个人信息.png" alt=""></div>
       <div><img class="initialLogo" src="img/游戏/早睡晚睡时间.png" alt=""></div>
@@ -80,23 +80,31 @@
     </div>
     <div class="picture">
       <input name="sportsTypes" id="running" type="checkbox">
-      <label for="running"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="running"><img src="img/运动/选项框拷贝8.png" id="runningCheck" class="checkboxForSports"></label>
+
       <input name="sportsTypes" id="badminton" type="checkbox">
-      <label for="badminton"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="badminton"><img src="img/运动/选项框拷贝8.png" id="badmintonCheck" class="checkboxForSports"></label>
+
       <input name="sportsTypes" id="basketball" type="checkbox">
-      <label for="basketball"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="basketball"><img src="img/运动/选项框拷贝8.png" id="basketballCheck" class="checkboxForSports"></label>
+
       <input name="sportsTypes" id="football" type="checkbox">
-      <label for="football"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="football"><img src="img/运动/选项框拷贝8.png" id="footballCheck" class="checkboxForSports"></label>
+
       <input name="sportsTypes" id="bike" type="checkbox">
-      <label for="bike"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="bike"><img src="img/运动/选项框拷贝8.png" id="bikeCheck" class="checkboxForSports"></label>
+
       <input name="sportsTypes" id="swimming" type="checkbox">
-      <label for="swimming"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="swimming"><img src="img/运动/选项框拷贝8.png" id="swimmingCheck" class="checkboxForSports"></label>
+
       <input name="sportsTypes" id="bodyBuilding" type="checkbox">
-      <label for="bodyBuilding"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
-      <input name="sportsTypes" id="ping-pang-ball" type="checkbox">
-      <label for="ping-pang-ball"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="bodyBuilding"><img src="img/运动/选项框拷贝8.png" id="bodyBuildingCheck" class="checkboxForSports"></label>
+
+      <input name="sportsTypes" id="pingpangball" type="checkbox">
+      <label for="pingpangball"><img src="img/运动/选项框拷贝8.png" id="pingpangballCheck" class="checkboxForSports"></label>
+
       <input name="sportsTypes" id="yoga" type="checkbox">
-      <label for="yoga"><img src="img/运动/选项框拷贝8.png" class="checkboxForSports"></label>
+      <label for="yoga"><img src="img/运动/选项框拷贝8.png" id="yogaCheck" class="checkboxForSports"></label>
     </div>
     <div class="word2">
     该条件重要程度
@@ -106,5 +114,6 @@
     </div>
   </div>
 </body>
-<script src="js/javascript.js"></script>
+<script src="js/jsForChooseSleepTime.js"></script>
+<script src="js/jsForChooseSports.js"></script>
 </html>
