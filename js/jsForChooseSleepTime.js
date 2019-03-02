@@ -105,6 +105,8 @@ chooseNumberTime[0].addEventListener("touchend",function(event){
     setTime1.find("p")[0].innerHTML=getUpTime;
   }
 },false)            //进行一个时间的同步显示
+
+//切换到下一个页面  运动
 var sleepNext = $('.SleepNext');
 sleepNext[0].addEventListener('touchstart',function(){
   sleep.fadeOut();
