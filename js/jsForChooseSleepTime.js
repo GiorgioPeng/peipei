@@ -1,4 +1,5 @@
 var sleep = $(".sleep");
+var sport = $('.sport');
 var container1 = $("#container1");
 var setTimeButton = $("#setTimeButton");
 var back = $("#back");
@@ -104,3 +105,9 @@ chooseNumberTime[0].addEventListener("touchend",function(event){
     setTime1.find("p")[0].innerHTML=getUpTime;
   }
 },false)            //进行一个时间的同步显示
+var sleepNext = $('.SleepNext');
+sleepNext[0].addEventListener('touchstart',function(){
+  sleep.fadeOut();
+  sleep[0].style.display="none";
+  sport[0].style.display="block";
+},false)
