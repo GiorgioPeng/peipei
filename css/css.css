@@ -342,7 +342,7 @@ body{
 #setTimeButton{
   background-image: url(img/保存.png);
   background-size:53.2vw 7.15vh;
-  margin: 0.79vh auto;
+  margin: 2.8vh auto;
   width: 53.2vw;
   height: 7.15vh;
 }
@@ -391,9 +391,55 @@ body{
   left: 3vw;
   width:81.97vw;
 }
+
 input[name="sportsTypes"]{
   display: none;
 }
 .checkboxForSports{
   max-width: 4.4vw;
+}
+#runningCheck{
+  position: relative;
+  top: 10.5vh;
+  left: 20.5vw;
+}
+#badmintonCheck{
+  position: relative;
+  top:10.5vh;
+  left: 46.5vw;
+}
+#basketballCheck{
+  position: relative;
+  top: 10.5vh;
+  left: 68.5vw;
+}
+#footballCheck{
+  position: relative;
+  top: 24vh;
+  left: 4.5vw;
+}
+#bikeCheck{
+  position: relative;
+  top: 24vh;
+  left: 30.5vw;
+}
+#swimmingCheck{
+  position: relative;
+  top: 24vh;
+  left: 53.5vw;
+}
+#bodyBuildingCheck{
+  position: relative;
+  top: 37.5vh;
+  left: -10.5vw;
+}
+#pingpangballCheck{
+  position: relative;
+  top: 37.5vh;
+  left: 14.5vw;
+}
+#yogaCheck{
+  position: relative;
+  top: 37.5vh;
+  left: 37.5vw;
 }
