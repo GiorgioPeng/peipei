@@ -9,19 +9,28 @@
   <title>demo</title>
 </head>
 <body>
+  <div class="container information" style="display:none">
+    <div class="topLogo">
+      <div><img class="clickLogo logoForInformation" src="img/个人信息.png" alt=""></div>
+      <div><img class="initialLogo logoForSleepTime" src="img/游戏/早睡晚睡时间.png" alt=""></div>
+      <div><img class="initialLogo logoForSports" src="img/运动.png" alt=""></div>
+      <div><img class="initialLogo logoForGames" src="img/游戏.png" alt=""></div>
+      <div><img class="initialLogo logoForSmoking" src="img/运动/空调抽烟.png" alt=""></div>
+    </div>
+  </div>
   <div class="container sleep">
     <div class="topLogo">
-      <div><img class="initialLogo" src="img/个人信息.png" alt=""></div>
-      <div><img class="clickLogo" src="img/早睡晚睡时间.png" alt=""></div>
-      <div><img class="initialLogo" src="img/运动.png" alt=""></div>
-      <div><img class="initialLogo" src="img/游戏.png" alt=""></div>
-      <div><img class="initialLogo" src="img/家境.png" alt=""></div>
+      <div><img class="initialLogo logoForInformation" src="img/个人信息.png" alt=""></div>
+      <div><img class="clickLogo logoForSleepTime" src="img/早睡晚睡时间.png" alt=""></div>
+      <div><img class="initialLogo logoForSports" src="img/运动.png" alt=""></div>
+      <div><img class="initialLogo logoForGames" src="img/游戏.png" alt=""></div>
+      <div><img class="initialLogo logoForSmoking" src="img/运动/空调抽烟.png" alt=""></div>
     </div>
     <div class="left">
         <img src="img/竖线.png" alt="">
     </div>
     <div class="right">
-        <div class="information"></div>
+        <div class="information1"></div>
         <div class="setTime1 setTime"><p>点击添加平均睡眠时段</p></div>
         <div class="setTime2 setTime"><p>点击添加平均睡眠时段</p></div>
     </div>
@@ -69,11 +78,11 @@
   </div>
   <div class="container sport" style="display:none">
     <div class="topLogo">
-      <div><img class="initialLogo" src="img/个人信息.png" alt=""></div>
-      <div><img class="initialLogo" src="img/游戏/早睡晚睡时间.png" alt=""></div>
-      <div><img class="clickLogo" src="img/运动/运动.png" alt=""></div>
-      <div><img class="initialLogo" src="img/游戏.png" alt=""></div>
-      <div><img class="initialLogo" src="img/运动/空调抽烟.png" alt=""></div>
+      <div><img class="initialLogo logoForInformation" src="img/个人信息.png" alt=""></div>
+      <div><img class="initialLogo logoForSleepTime" src="img/游戏/早睡晚睡时间.png" alt=""></div>
+      <div><img class="clickLogo logoForSports" src="img/运动/运动.png" alt=""></div>
+      <div><img class="initialLogo logoForGames" src="img/游戏.png" alt=""></div>
+      <div><img class="initialLogo logoForSmoking" src="img/运动/空调抽烟.png" alt=""></div>
     </div>
     <div class="word1">
       选择日常进行的运动 若没有可直接进入下一项
@@ -109,11 +118,30 @@
     <div class="word2">
     该条件重要程度
     </div>
-    <input type="range" id="range">
+    <input type="range" id="range" min="0" max="5" step="1" value="0">
     <div class="button">
+    </div>
+  </div>
+  <div class="container game" style="display:none">
+    <div class="topLogo">
+      <div><img class="initialLogo logoForInformation" src="img/个人信息.png" alt=""></div>
+      <div><img class="initialLogo logoForSleepTime" src="img/游戏/早睡晚睡时间.png" alt=""></div>
+      <div><img class="initialLogo logoForSports" src="img/运动.png" alt=""></div>
+      <div><img class="clickLogo logoForGames" src="img/游戏/游戏.png" alt=""></div>
+      <div><img class="initialLogo logoForSmoking" src="img/运动/空调抽烟.png" alt=""></div>
+    </div>
+  </div>
+  <div class="container smoking" style="display:none">
+    <div class="topLogo">
+      <div><img class="initialLogo logoForInformation" src="img/个人信息.png" alt=""></div>
+      <div><img class="initialLogo logoForSleepTime" src="img/游戏/早睡晚睡时间.png" alt=""></div>
+      <div><img class="initialLogo logoForSports" src="img/运动.png" alt=""></div>
+      <div><img class="initialLogo logoForGames" src="img/游戏.png" alt=""></div>
+      <div><img class="clickLogo logoForSmoking" src="img/运动/空调抽烟.png" alt=""></div>
     </div>
   </div>
 </body>
 <script src="js/jsForChooseSleepTime.js"></script>
 <script src="js/jsForChooseSports.js"></script>
+<script src="js/jsForToggleTheTopLogo.js"></script>
 </html>
