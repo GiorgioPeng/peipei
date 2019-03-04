@@ -67,7 +67,7 @@ body{
   height: 58.65vh;
   float: left;
 }
-.information{
+.information1{
   margin-top: 6vh;
   width: 48.84vw;
   height:3.5vh;
@@ -324,6 +324,7 @@ body{
     position: absolute;
     top: 22vh;
     left: 9vw;}
+
 }
 #AM{
   width: 12.88vw;
@@ -345,6 +346,11 @@ body{
   margin: 2.8vh auto;
   width: 53.2vw;
   height: 7.15vh;
+}
+@media screen and (min-device-height:760px) {
+  #setTimeButton{
+    margin-top:3.8vh;
+  }
 }
 .picture
 {
@@ -387,11 +393,23 @@ body{
 }
 #range
 {
+  -webkit-appearance: none;
+  background: -webkit-linear-gradient(#90b4f0, #90b4f0) no-repeat, #f2f2f2;
+  outline: none;
+  background-size: 25% 100%;
   position: relative;
   left: 3vw;
+  height: 3px;
   width:81.97vw;
 }
-
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;/*清除系统默认样式*/
+  height:16px;/*拖动块高度*/
+  width: 16px;/*拖动块宽度*/
+  background:#90b4f0;/*拖动块背景*/
+  border-radius: 50%; /*外观设置为圆形*/
+  border: solid 1px #90b4f0; /*设置边框*/
+}
 input[name="sportsTypes"]{
   display: none;
 }
