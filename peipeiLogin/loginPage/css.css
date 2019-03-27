@@ -1,0 +1,81 @@
+.bady{
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  height:auto;
+  width:100%;
+  overflow:hidden;
+  margin:0px;
+  padding:0px;
+}
+.peipei{
+  position:absolute;left:35.7%;top:40%;
+  width:28.6%
+}
+.line1{
+  position:absolute;top:52%;left:14.3%;
+  width:74.3%
+}
+.line2{
+  position:absolute;top:57.2%;left:14.3%;
+  width:74.3%
+}
+.line3{
+  position:absolute;top:62.5%;left:14.3%;
+  width:74.3%
+}
+.button{
+  height:5.2%;
+  width:52.9%;
+  position:absolute;left:24.3%;top:71%;
+  background-color:#90b4f0;
+  border-radius: 4rem;
+  color:#4a4a4a;
+  font-size: 2rem;
+  font-style: AdobeHeitiStd-Regular;
+  text-align: center;
+   line-height:190%;
+}
+.input1{
+color:rgba(255,255,255,0.6);
+background-color:rgba(0,0,0,0);
+font-size: 2rem;
+font-style: PingFangSC-Regular;
+position:absolute;top:49.3%; left:14.3%;
+width:74.3%;
+text-align: center;
+border: none;
+}
+.input2{
+color:rgba(255,255,255,0.6);
+background-color:rgba(0,0,0,0);
+font-size: 2rem;
+font-style: PingFangSC-Regular;
+text-align: center;
+position:absolute;top:54.6%; left:14.3%;
+width:74.3%;
+border: none;
+}
+.input3{
+color:rgba(255,255,255,0.6);
+background-color:rgba(0,0,0,0);
+font-size: 2rem;
+text-align: center;
+position:absolute;top:59.2%; left:14.3%;
+width:74.3%;
+border: none;
+}
+input[type="submit"]{
+  height:5.2%;
+  width:52.9%;
+  position:absolute;left:24.3%;top:71%;
+  background-color:#90b4f0;
+  border-radius: 4rem;
+  color:#4a4a4a;
+  font-size: 2rem;
+  text-align: center;
+  line-height:190%;
+  border: none;
+  cursor: pointer;
+}
