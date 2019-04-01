@@ -51,44 +51,160 @@ body{
 .clickLogo{
   max-width: 7.6vmin;
 }
-.left{
+.information_people{
+  background-image: url(img/个人信息/照片.png);
+  background-size: 100% 100%;
+  width:78.61vw;
+  height:21.66vh;
+  margin: 5.37vh auto;
+  margin-bottom: 0;
+  border-radius: 12.7%;
+  box-shadow:2px 2px 15px rgb(120,120,120);
+}
+.information_earth{
+  background-image: url(img/个人信息/地球.png);
+  background-size: 100% 100%;
+  width:78.61vw;
+  height:21.66vh;
+  margin: 4.96vh auto;
+  margin-bottom: 0;
+  border-radius: 12.7%;
+  box-shadow:2px 2px 15px rgb(120,120,120);
+}
+#information_detail{
+   position: relative;
+   left: 36.47vw;
+   top: 3.24vh;
+   display: flex;
+   flex-direction: column;
+   width: 36.38vw;
+   height: 13.41vh;
+   justify-content:space-between;
+}
+.information_personal{
+   background-color: #f8f6f9;
+   background-image: url(img/个人信息/个人信息输入.png);
+   background-size: 100% 100%;
+   text-align: center;
+   font-size: 2.3vw;
+   height: 2.91vh;
+   width: 36.38vw;
+   border: none;
+   outline: none;
+}
+.information_choose{
+  background-color: #f8f6f9;
+  background-image: url(img/个人信息/Shape104.png);
+  background-size: 100% 100%;
+  text-align: center;
+  font-size: 2.3vw;
+  height: 2.91vh;
+  width: 36.38vw;
+  border: none;
+  outline: none;
+}
+#information_sex{
+  height: 5.08vh;
+  width: 36.38vw;
+  position: relative;
+  left: 36.47vw;
+  top:4vh;
+  display: flex;
+  justify-content: space-around;
+}
+.information_earth .information_choose{
+  position: relative;
+  top: 6.6vh;
+  left: 36.47vw;
+}
+input[name='sex']{
+  display: none;
+}
+input[name='sex']+label img{
+  max-width: 3.19vw;
+}
+#information_range
+{
+  -webkit-appearance: none;
+  background: -webkit-linear-gradient(#90b4f0, #90b4f0) no-repeat, #f2f2f2;
+  outline: none;
+  background-size: 100% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
+  height: 3px;
+  width:44.81vw;
+  position: relative;
+  z-index: 2;
+  left: 17.12vw;
+  top:12.8vh;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;/*清除系统默认样式*/
+  height:16px;/*拖动块高度*/
+  width: 16px;/*拖动块宽度*/
+  background:#90b4f0;/*拖动块背景*/
+  border-radius: 50%; /*外观设置为圆形*/
+  border: solid 1px #90b4f0; /*设置边框*/
+}
+.information_footer{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  position: relative;
+  top:12vh;
+  left: 8vw;
+}
+@media screen and (max-device-height:530px) {
+  .information_footer{
+    top:10vh;
+  }
+}
+@media screen and (min-device-height:800px) {
+  .information_footer{
+    top:13vh;
+  }
+}
+@media screen and (min-device-width:768px) {
+  .information_footer{
+    top:10.5vh;
+  }
+}
+.sleep_left{
   width: 20%;
   height: 58.65vh;
   float: left;
 }
-.left img{
+.sleep_left img{
   margin-left: 86%;
   max-height: 44vh;
 }
-.right{
+.sleep_right{
   margin-left: 6vw;
   margin-right: 6.12vw;
   width: 56.78vw;
   height: 58.65vh;
   float: left;
 }
-.information1{
+.sleep_information{
   margin-top: 6vh;
   width: 48.84vw;
   height:3.5vh;
   background-image: url(img/设置.png);
   background-size:48.84vw 3.5vh
 }
-.setTime1{
+.sleep_setTime1{
   margin-top: 4.1vh;
   width: 57vw;
   height: 17.39vh;
   background-image: url(img/山.png);
   background-size: 57vw 17.39vh;
 }
-.setTime2{
+.sleep_setTime2{
   margin-top: 4.1vh;
   width: 57vw;
   height: 17.39vh;
   background-image: url(img/星星.png);
   background-size: 57vw 17.39vh;
 }
-.setTime p{
+.sleep_setTime p{
   position: relative;
   top: 14vh;
   text-align: center;
@@ -352,7 +468,7 @@ body{
     margin-top:3.8vh;
   }
 }
-.picture
+.sport_picture
 {
   background-image: url(img/运动/运动图.png);
   background-size:87.3vw 40.78vh;
@@ -360,7 +476,7 @@ body{
   height:40.78vh;
   width: 87.3vw;
 }
-.word1{
+.sport_word1{
   margin: 2.1vh auto;
   text-align: center;
   background-color: rgb(248,246,249);
@@ -374,7 +490,7 @@ body{
   height:2.95vh;
   width:69vw;
 }
-.word2
+.sport_word2
 {
   margin-top: 2vh;
   margin-left: 3vw;
@@ -391,12 +507,12 @@ body{
   height:3vh;
 
 }
-#range
+#sport_range
 {
   -webkit-appearance: none;
   background: -webkit-linear-gradient(#90b4f0, #90b4f0) no-repeat, #f2f2f2;
   outline: none;
-  background-size: 25% 100%;
+  background-size: 25% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
   position: relative;
   left: 3vw;
   height: 3px;
