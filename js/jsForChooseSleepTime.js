@@ -3,8 +3,8 @@ var sport = $('.sport');
 var container1 = $("#container1");
 var setTimeButton = $("#setTimeButton");
 var back = $("#back");
-var setTime1 = $(".setTime1");
-setTime1[0].addEventListener("touchstart",function(){
+var sleep_setTime1 = $(".sleep_setTime1");
+sleep_setTime1[0].addEventListener("touchstart",function(){
   let left = 200;
   sleep.fadeOut();
   let set = setInterval(function () {
@@ -102,13 +102,13 @@ chooseNumberTime[0].addEventListener("touchend",function(event){
           }
       }
     }
-    setTime1.find("p")[0].innerHTML=getUpTime;
+    sleep_setTime1.find("p")[0].innerHTML=getUpTime;
   }
 },false)            //进行一个时间的同步显示
 
 //切换到下一个页面  运动
-var sleepNext = $('.SleepNext');
-sleepNext[0].addEventListener('touchstart',function(){
+var sleep_button = $('.sleep_button');
+sleep_button[0].addEventListener('touchstart',function(){
   sleep.fadeOut();
   sleep[0].style.display="none";
   sport[0].style.display="block";
