@@ -1,5 +1,5 @@
 //运动选择点切换
-var sportChoose = $(".picture");
+var sportChoose = $(".sport_picture");
 sportChoose[0].addEventListener("touchstart",function(ev){
   var ev = ev || window.event;
   var target = ev.target || ev.srcElement;
