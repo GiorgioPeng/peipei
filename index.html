@@ -25,11 +25,11 @@
         <input type="text" class="information_choose" placeholder="专业">
        </div>
       <div id="information_sex">
-        <input type="radio" name="sex" id="male">
+        <input type="radio" name="sex" id="male" value="male">
         <label for="male">
           <img src="img/个人信息/男灰.png" alt="">
         </label>
-        <input type="radio" name="sex" id="female">
+        <input type="radio" name="sex" id="female" value="female">
         <label for="female">
           <img src="img/个人信息/女灰.png" alt="">
         </label>
@@ -37,7 +37,7 @@
     </div>
     <div class="information_kuang information_earth">
         <input type="text" class="information_choose" placeholder="省份">
-        <input type="range" id="information_range" value="0" min="0" max="5" step="1">
+        <input type="range" id="information_range" style="background-size:0% 100%" value="0" min="0" max="5" step="1">
         <div class="information_footer">
           <p style="font-size:1.95vw;color:#ceccd1">不敏感</p>
           <p style="font-size:1.95vw;color:#ceccd1">极敏感</p>
@@ -169,6 +169,7 @@
     </div>
   </div>
 </body>
+<script src="js/jsForInformation.js"></script>
 <script src="js/jsForChooseSleepTime.js"></script>
 <script src="js/jsForChooseSports.js"></script>
 <script src="js/jsForToggleTheTopLogo.js"></script>
