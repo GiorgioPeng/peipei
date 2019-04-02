@@ -4,16 +4,18 @@ var smoking = $(".smoking");
 var game = $(".game");
 var information = $(".information");
 
-var topLogo = $("body");
+var topLogo = $(".topLogo");
+// console.log(topLogo.length);
 try {
-topLogo[0].addEventListener("touchstart",function(event){
+for(let i = 0;i<topLogo.length;i++)
+topLogo[i].addEventListener("touchstart",function(event){
   var ev=event||window.event;
   var target = ev.target||ev.srcElement;
   if(target.nodeName.toLowerCase() == "img")
     {
       var string = target.className.split(" ");
       var choose = string.pop();
-      console.log(choose);
+      // console.log(choose);
       switch (choose) {
         case 'logoForGames':
           game[0].style.display="block";
