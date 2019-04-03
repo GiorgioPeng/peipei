@@ -128,13 +128,14 @@ input[name='sex']+label img{
   -webkit-appearance: none;
   background: -webkit-linear-gradient(#90b4f0, #90b4f0) no-repeat, #f2f2f2;
   outline: none;
-  background-size: 100% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
+  background-size: 0% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
   height: 3px;
   width:44.81vw;
   position: relative;
   z-index: 2;
   left: 17.12vw;
   top:12.8vh;
+  transition: background-size 0.5s linear;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;/*清除系统默认样式*/
@@ -152,9 +153,9 @@ input[type=range]::-webkit-slider-thumb {
   top:12vh;
   left: 8vw;
 }
-@media screen and (max-device-height:530px) {
+@media screen and (max-device-height:568px) {
   .information_footer{
-    top:10vh;
+    top:10.5vh;
   }
 }
 @media screen and (min-device-height:800px) {
@@ -512,11 +513,12 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: -webkit-linear-gradient(#90b4f0, #90b4f0) no-repeat, #f2f2f2;
   outline: none;
-  background-size: 25% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
+  background-size: 0% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
   position: relative;
   left: 3vw;
   height: 3px;
   width:81.97vw;
+  transition: background-size 0.5s linear;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;/*清除系统默认样式*/
