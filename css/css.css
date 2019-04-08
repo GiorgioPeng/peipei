@@ -92,7 +92,18 @@ body{
    border: none;
    outline: none;
 }
+.information_choose_kuang{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  width: 36.2vw;
+  height: 7.4vh;
+  position: relative;
+  top: 4vh;
+  left: 36.7vw;
+}
 .information_choose{
+  margin: 0;
   background-color: #f8f6f9;
   background-image: url(img/个人信息/Shape104.png);
   background-size: 100% 100%;
@@ -112,11 +123,7 @@ body{
   display: flex;
   justify-content: space-around;
 }
-.information_earth .information_choose{
-  position: relative;
-  top: 6.6vh;
-  left: 36.47vw;
-}
+
 input[name='sex']{
   display: none;
 }
@@ -134,8 +141,8 @@ input[name='sex']+label img{
   position: relative;
   z-index: 2;
   left: 17.12vw;
-  top:12.8vh;
-  transition: background-size 0.5s linear;
+  top:8.8vh;
+  transition: background-size 0.25s linear;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;/*清除系统默认样式*/
@@ -150,22 +157,22 @@ input[type=range]::-webkit-slider-thumb {
   justify-content: space-between;
   width: 80%;
   position: relative;
-  top:12vh;
+  top:7.5vh;
   left: 8vw;
 }
 @media screen and (max-device-height:568px) {
   .information_footer{
-    top:10.5vh;
+    top:6.5vh;
   }
 }
 @media screen and (min-device-height:800px) {
   .information_footer{
-    top:13vh;
+    top:8vh;
   }
 }
 @media screen and (min-device-width:768px) {
   .information_footer{
-    top:10.5vh;
+    top:6vh;
   }
 }
 .sleep_left{
@@ -188,21 +195,21 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 6vh;
   width: 48.84vw;
   height:3.5vh;
-  background-image: url(img/设置.png);
+  background-image: url(img/睡眠/设置.png);
   background-size:48.84vw 3.5vh
 }
 .sleep_setTime1{
   margin-top: 4.1vh;
   width: 57vw;
   height: 17.39vh;
-  background-image: url(img/山.png);
+  background-image: url(img/睡眠/山.png);
   background-size: 57vw 17.39vh;
 }
 .sleep_setTime2{
   margin-top: 4.1vh;
   width: 57vw;
   height: 17.39vh;
-  background-image: url(img/星星.png);
+  background-image: url(img/睡眠/星星.png);
   background-size: 57vw 17.39vh;
 }
 .sleep_setTime p{
@@ -225,7 +232,7 @@ input[type=range]::-webkit-slider-thumb {
   display: none;
   margin: 12.45vh auto;
   margin-bottom: 0;
-  background-image: url(img/底框.png);
+  background-image: url(img/睡眠/底框.png);
   background-size: 87.21vw 71.82vh;
   width: 87.21vw;
   height: 71.82vh;
@@ -234,7 +241,7 @@ input[type=range]::-webkit-slider-thumb {
   z-index: 5;
 }
 #top{
-  background-image: url(img/顶框.png);
+  background-image: url(img/睡眠/顶框.png);
   background-size:100% 7.46vh;
   width: 100%;
   height: 7.46vh;
@@ -247,17 +254,17 @@ input[type=range]::-webkit-slider-thumb {
   height:4vh;
 }
 #getUp{
-  background-image: url(img/起床时间段.png);
+  background-image: url(img/睡眠/起床时间段.png);
   background-size: 25.49vw 4vh;
 }
 #goBed{
-  background-image: url(img/睡眠时间段.png);
+  background-image: url(img/睡眠/睡眠时间段.png);
   background-size: 25.49vw 4vh;
 }
 #chooseTime{
   margin: 7.22vh auto;
   margin-bottom: 0;
-  background-image: url(img/大时间.png);
+  background-image: url(img/睡眠/大时间.png);
   background-size: 55.42vw 19.52vh;
   height: 19.52vh;
   width: 55.42vw;
@@ -317,7 +324,7 @@ input[type=range]::-webkit-slider-thumb {
   width: 11.8vw;
   height: 4.1vh;
   background-position: bottom;
-  background-image: url(img/蓝线.png);
+  background-image: url(img/睡眠/蓝线.png);
   background-size: 55.42vw 0.16vh;
   background-repeat: no-repeat;
   background-color: #dde8fa;
@@ -343,7 +350,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 #back{
   position: absolute;
-  background-image: url(img/返回.png);
+  background-image: url(img/睡眠/返回.png);
   background-size: 7.14vmin 7.14vmin;
   width: 7.14vmin;
   height: 7.14vmin;
@@ -374,6 +381,127 @@ input[type=range]::-webkit-slider-thumb {
   transition: all 0.2s linear;
 }
 
+
+
+#chooseTime1{
+  margin: 7.22vh auto;
+  margin-bottom: 0;
+  background-image: url(img/睡眠/大时间.png);
+  background-size: 55.42vw 19.52vh;
+  height: 19.52vh;
+  width: 55.42vw;
+  display: grid;
+  grid-template-columns:11.43vw 11.43vw 11.43vw 11.43vw;
+  grid-template-rows: 9vh 9vh;
+  grid-row-gap:1.8vh;
+  grid-column-gap: 0.62vw;
+  position: relative;
+  z-index: 5;
+}
+#chooseTime1 div{
+  width: 11.43vw;
+  height: 9vh;
+  text-align: center;
+  font-size: 5vh;
+}
+#chooseTime1 div p{
+  margin: 1.3vh auto;
+  margin-bottom: 0;
+  color:#ffffff;
+  position: relative;
+  z-index: 1;
+  transition: all 1s linear;
+}
+#chooseTime1 div:nth-child(3){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTime1 div:nth-child(4){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTime1 div:nth-child(7){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTime1 div:nth-child(8){
+  transform: translateX(7.8vw);
+  -webkit-transform:translateX(7.8vw);
+}
+#chooseTimeShadow1{
+  margin: -19.6vh auto;
+  margin-bottom: 0;
+  height: 19.52vh;
+  width: 55.42vw;
+  display: grid;
+  grid-template-columns:11.43vw 11.43vw 11.43vw 11.43vw;
+  grid-template-rows: 9vh 9vh;
+  grid-row-gap:1.8vh;
+  grid-column-gap: 0.62vw;
+  position: relative;
+  z-index: 5;
+
+}
+#chooseTimeShadow1 div{
+  width: 11.8vw;
+  height: 4.1vh;
+  background-position: bottom;
+  background-image: url(img/睡眠/蓝线.png);
+  background-size: 55.42vw 0.16vh;
+  background-repeat: no-repeat;
+  background-color: #dde8fa;
+  opacity: 0.5;
+  position: relative;
+  z-index: 3;
+}
+#chooseTimeShadow1 div:nth-child(3){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#chooseTimeShadow1 div:nth-child(4){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#chooseTimeShadow1 div:nth-child(7){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#chooseTimeShadow1 div:nth-child(8){
+  transform: translateX(7.6vw);
+  -webkit-transform:translateX(7.6vw);
+}
+#back1{
+  position: absolute;
+  background-image: url(img/睡眠/返回.png);
+  background-size: 7.14vmin 7.14vmin;
+  width: 7.14vmin;
+  height: 7.14vmin;
+  left: 1.6vw;
+  top:50%;
+  margin-top: -3.57vmin;
+}
+#chooseNumberTime1{
+  height: 200px;
+  width:180px;
+  position: relative;
+  top:2.5vh;
+  left: 32.95vw;
+}
+@media screen and (min-device-height:750px) {
+  #chooseNumberTime1{
+    top:4vh;
+  }
+}
+@media screen and (min-device-width:768px) {
+  #chooseNumberTime1{
+    height: 400px;
+    width: 400px;
+  }
+}
+#chooseNumberTime1 div{
+  text-align: center;
+  transition: all 0.2s linear;
+}
 
 .time1{
   width: 70%;
@@ -448,7 +576,22 @@ input[type=range]::-webkit-slider-thumb {
   height: 3.4vh;
   font-size: 3.8vw;
   text-align: center;
-  background-image: url(img/蓝线.png);
+  background-image: url(img/睡眠/蓝线.png);
+  background-size:   12.86vw  0.25vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #ceccd1;
+  position: absolute;
+  top:51.5vh;
+  left: 12.86vw;
+}
+
+#PM{
+  width: 12.88vw;
+  height: 3.4vh;
+  font-size: 3.8vw;
+  text-align: center;
+  background-image: url(img/睡眠/蓝线.png);
   background-size:   12.86vw  0.25vh;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -458,7 +601,7 @@ input[type=range]::-webkit-slider-thumb {
   left: 12.86vw;
 }
 #setTimeButton{
-  background-image: url(img/保存.png);
+  background-image: url(img/睡眠/保存.png);
   background-size:53.2vw 7.15vh;
   margin: 2.8vh auto;
   width: 53.2vw;
