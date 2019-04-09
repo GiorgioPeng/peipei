@@ -103,17 +103,17 @@ body{
   left: 36.7vw;
 }
 .information_choose{
-  margin: 0;
-  background-color: #f8f6f9;
   background-image: url(img/个人信息/Shape104.png);
   background-size: 100% 100%;
-  text-align: center;
   font-size: 2.3vw;
   height: 2.91vh;
   width: 36.38vw;
-  border: none;
-  outline: none;
+  line-height: 210%;
+  text-align:center;
+  background-color:transparent;
+  border-color:transparent;
 }
+
 #information_sex{
   height: 5.08vh;
   width: 36.38vw;
@@ -142,7 +142,7 @@ input[name='sex']+label img{
   z-index: 2;
   left: 17.12vw;
   top:8.8vh;
-  transition: background-size 0.25s linear;
+  transition: background-size 0.1s linear;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;/*清除系统默认样式*/
@@ -661,7 +661,7 @@ input[type=range]::-webkit-slider-thumb {
   left: 3vw;
   height: 3px;
   width:81.97vw;
-  transition: background-size 0.5s linear;
+  transition: background-size 0.1s linear;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;/*清除系统默认样式*/
@@ -721,4 +721,74 @@ input[name="sportsTypes"]{
   position: relative;
   top: 37.5vh;
   left: 37.5vw;
+}
+.smoking_tem_choose{
+  background-image: url(img/空调抽烟/空调.png);
+  background-size: 100% 100%;
+  width:69.6vw;
+  height: 25.27vh;
+  margin:2.46vh auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-end;
+
+}
+.smoking_air_cold div{
+  height: 2.6vh;
+  line-height: 150%;
+  font-size: 1rem;
+}
+.smoking_air_hot div{
+  height: 2.6vh;
+  line-height: 150%;
+  font-size: 1rem;
+}
+.smoking_smoke{
+  background-image: url(img/空调抽烟/吸烟.png);
+  background-size: 100% 100%;
+  margin: 2.91vh auto;
+  width: 69.6vw;
+  height: 25.27vh;
+}
+input[name='whether_smoke']{
+  display: none;
+}
+
+input[name='whether_smoke']+label div{
+  position: relative;
+  top:7vh;
+  left: 32.8vw;
+  padding-top: 1.5vh;
+}
+input[name="smoking_range"]
+{
+  -webkit-appearance: none;
+  background: -webkit-linear-gradient(#e86061, #e86061) no-repeat, #f2f2f2;
+  outline: none;
+  background-size: 0% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
+  height: 3px;
+  position: relative;
+  left: 13.5vw;
+  top:13vh;
+  width:40.76vw;
+  transition: background-size 0.1s linear;
+}
+@media screen and (min-device-height:780px) {
+  input[name='smoking_range']{
+    top:15vh;
+  }
+}
+@media screen and (min-device-height:980px) {
+  input[name='smoking_range']{
+    top:11vh;
+  }
+}
+input[name="smoking_range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;/*清除系统默认样式*/
+  height:16px;/*拖动块高度*/
+  width: 16px;/*拖动块宽度*/
+  background:#e86061;/*拖动块背景*/
+  border-radius: 50%; /*外观设置为圆形*/
+  border: solid 1px #e86061; /*设置边框*/
 }
