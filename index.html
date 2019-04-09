@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
   <script src="js/jquery.min.js"></script>
   <title>demo</title>
 </head>
 <body>
-  <div class="container information">
+  <div class="container information" style="display:none">
     <div class="topLogo">
       <div><img class="clickLogo logoForInformation" src="img/个人信息/个人信息.png" alt=""></div>
       <div><img class="initialLogo logoForSleepTime" src="img/个人信息/早睡晚睡时间.png" alt=""></div>
@@ -22,7 +22,15 @@
         <input type="text" class="information_personal" placeholder="学校">
         <input type="text" class="information_personal" placeholder="姓名">
         <input type="text" class="information_personal" placeholder="学号">
-        <input type="text" class="information_choose" placeholder="专业">
+        <div class="information_choose" name="">请选择专业
+          <div class="major_choose" style="display:none">
+            <div value="计科">计科</div>
+            <div value="环境">环境</div>
+            <div value="信管">信管</div>
+            <div value="数媒">数媒</div>
+            <div value="工商">工商</div>
+          </div>
+        </div>
        </div>
       <div id="information_sex">
         <input type="radio" name="sex" id="male" value="male">
@@ -37,8 +45,52 @@
     </div>
     <div class="information_kuang information_earth">
       <div class="information_choose_kuang">
-        <input type="text" class="information_choose" placeholder="南北方">
-        <input type="text" class="information_choose" placeholder="省份">
+        <div id="n_o_s" class="information_choose" required name="">请选择南方或北方
+          <div style="display:none">
+            <div value="南方">南方</div>
+            <div value="北方">北方</div>
+          </div>
+        </div>
+        <div id="provence" class="information_choose" name="">请选择省份
+            <div id="s_provence" class="provence_choose" style="display:none">
+              <div class="p_choose">江苏</div>
+              <div class="p_choose">安徽</div>
+              <div class="p_choose">上海</div>
+              <div class="p_choose">浙江</div>
+              <div class="p_choose">福建</div>
+              <div class="p_choose">江西</div>
+              <div class="p_choose">湖北</div>
+              <div class="p_choose">湖南</div>
+              <div class="p_choose">四川</div>
+              <div class="p_choose">重庆</div>
+              <div class="p_choose">云南</div>
+              <div class="p_choose">贵州</div>
+              <div class="p_choose">西藏</div>
+              <div class="p_choose">广西</div>
+              <div class="p_choose">广东</div>
+              <div class="p_choose">海南</div>
+              <div class="p_choose">台湾</div>
+              <div class="p_choose">香港</div>
+              <div class="p_choose">澳门</div>
+            </div>
+            <div id="n_provence" class="provence_choose" style="display:none">
+                <div class="p_choose">北京</div>
+                <div class="p_choose">天津</div>
+                <div class="p_choose">内蒙</div>
+                <div class="p_choose">新疆</div>
+                <div class="p_choose">河北</div>
+                <div class="p_choose">甘肃</div>
+                <div class="p_choose">宁夏</div>
+                <div class="p_choose">山西</div>
+                <div class="p_choose">陕西</div>
+                <div class="p_choose">青海</div>
+                <div class="p_choose">山东</div>
+                <div class="p_choose">河南</div>
+                <div class="p_choose">辽宁</div>
+                <div class="p_choose">吉林</div>
+                <div class="p_choose">黑龙江</div>
+            </div>
+        </div>
       </div>
         <input type="range" id="information_range" style="background-size:0% 100%" value="0" min="0" max="5" step="1">
         <div class="information_footer">
@@ -198,7 +250,7 @@
       <div><img class="initialLogo logoForSmoking" src="img/游戏/空调抽烟.png" alt=""></div>
     </div>
   </div>
-  <div class="container smoking" style="display:none">
+  <div class="container smoking" >
     <div class="topLogo">
       <div><img class="initialLogo logoForInformation" src="img/空调抽烟/个人信息.png" alt=""></div>
       <div><img class="initialLogo logoForSleepTime" src="img/空调抽烟/早睡晚睡时间.png" alt=""></div>
@@ -206,10 +258,34 @@
       <div><img class="initialLogo logoForGames" src="img/空调抽烟/游戏.png" alt=""></div>
       <div><img class="clickLogo logoForSmoking" src="img/空调抽烟/空调抽烟.png" alt=""></div>
     </div>
+    <div class="smoking_tem_choose">
+        <div class="smoking_air_cold">
+          <div style="color:#1a6a6f">19</div>
+          <div style="color:#1a6a6f">20</div>
+          <div style="color:#1a6a6f">21</div>
+        </div>
+        <div class="smoking_air_hot">
+          <div style="color:#983636">25</div>
+          <div style="color:#983636">26</div>
+          <div style="color:#983636">27</div>
+        </div>
+    </div>
+    <div class="smoking_smoke">
+      <input type="radio" id="smoking_true" name="whether_smoke" value="是">
+      <label for="smoking_true">
+        <div style="color:#c86200;transition:all 1s linear;">是</div>
+      </label>
+      <input type="radio" id="smoking_false" name="whether_smoke" value="否">
+      <label for="smoking_false">
+        <div style="color:#a2a1a4;transition:all 1s linear;">否</div>
+      </label>
+      <input type="range" name="smoking_range" value="0" min="0" max="5" step="1">
+    </div>
   </div>
 </body>
 <script src="js/jsForInformation.js"></script>
 <script src="js/jsForChooseSleepTime.js"></script>
 <script src="js/jsForChooseSports.js"></script>
 <script src="js/jsForToggleTheTopLogo.js"></script>
+<script src="js/jsForAirSmoking.js"></script>
 </html>
