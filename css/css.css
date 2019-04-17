@@ -734,16 +734,38 @@ input[name="sportsTypes"]{
   align-items:flex-end;
 
 }
-.smoking_air_cold div{
-  height: 2.6vh;
-  line-height: 150%;
-  font-size: 1rem;
+
+.smoking_air_choose{
+  height: 28%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+
 }
-.smoking_air_hot div{
-  height: 2.6vh;
-  line-height: 150%;
-  font-size: 1rem;
+
+.smoking_air_cold{
+  width: 50%;
+  height: 100%;
+  display: inline-flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.smoking_air_cold::-webkit-scrollbar { width: 0 !important }
+
+.smoking_air_hot{
+  width: 50%;
+  height: 100%;
+  display: inline-flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.smoking_air_hot::-webkit-scrollbar { width: 0 !important }
+
 .smoking_smoke{
   background-image: url(img/空调抽烟/吸烟.png);
   background-size: 100% 100%;
@@ -791,4 +813,91 @@ input[name="smoking_range"]::-webkit-slider-thumb {
   background:#e86061;/*拖动块背景*/
   border-radius: 50%; /*外观设置为圆形*/
   border: solid 1px #e86061; /*设置边框*/
+}
+/* ________________________________________________________________________________ */
+/* _____________________________________________________________________________________ */
+.book_photo{
+  height: 18.37vh;
+  width: 100%;
+}
+.book_main_photo{
+  transition: background-image 0.5s linear;
+  background-image: url(img/书籍/技术.png);
+  background-size: 100% 100%;
+  width:28.16vw;
+  height:13.86vh;
+  margin:2.4vh auto;
+}
+
+#book_range
+{
+  -webkit-appearance: none;
+  background: -webkit-linear-gradient(#90b4f0, #90b4f0) no-repeat, #f2f2f2;
+  outline: none;
+  background-size: 0% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
+  height: 1px;
+  position: relative;
+  left: 23vw;
+  width:40.76vw;
+  transition: background-size 0.1s linear;
+}
+#book_range::-webkit-slider-thumb {
+  -webkit-appearance: none;/*清除系统默认样式*/
+  height:12px;/*拖动块高度*/
+  width: 12px;/*拖动块宽度*/
+  background:#90b4f0;/*拖动块背景*/
+  border-radius: 50%; /*外观设置为圆形*/
+  border: solid 1px #90b4f0; /*设置边框*/
+}
+.book_choose{
+  background-image: url(img/书籍/框1.png);
+  background-size: 100% 100%;
+  margin: 1.8vh auto;
+  height: 28.76vh;
+  width: 63.7vw;
+  position: relative;
+}
+.book_choose_title{
+  font-size:2rem;
+  text-align: center;
+}
+.book_choose_type{
+  height: 75%;
+  width: 80%;
+  margin:1.47vh auto;
+  overflow:scroll;
+}
+
+.book_choose_type::-webkit-scrollbar { width: 0 !important }
+
+.book_fu{
+  height: 22%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.book_fu p {
+  width: 40%;
+  text-align: center;
+}
+
+.book_fu img{
+  max-width: 10%;
+  max-height: 70%;
+}
+.book_word{
+    margin-top: -1vh;
+    margin-left: 3vw;
+    text-align: center;
+    background-color: rgb(248,246,249);
+    font-size: 2.6vw;
+    line-height: 180%;
+    color:rgb(150,150,150);
+    border-radius: 200px;
+    border-color: rgb(200,200,200);
+    border-style:solid;
+    border-width: thin;
+    width:27.44vw;
+    height:3vh;
 }
