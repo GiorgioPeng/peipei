@@ -14,26 +14,34 @@ sportChoose[0].addEventListener("touchstart",function(ev){
 //值选择
 sport_range = $("#sport_range");
 sport_range[0].addEventListener("change",function(){
-    switch (sport_range[0].value) {
+    switch (sport_range.val()) {
       case '0':
-        sport_range[0].style.backgroundSize="0% 100%";
+        sport_range.css("backgroundSize","0% 100%");
         break;
       case '1':
-        sport_range[0].style.backgroundSize="20% 100%";
+        sport_range.css("backgroundSize","20% 100%");
         break;
       case '2':
-        sport_range[0].style.backgroundSize="40% 100%";
+        sport_range.css("backgroundSize","40% 100%");
         break;
       case '3':
-        sport_range[0].style.backgroundSize="60% 100%";
+        sport_range.css("backgroundSize","60% 100%");
         break;
       case '4':
-        sport_range[0].style.backgroundSize="80% 100%";
+        sport_range.css("backgroundSize","80% 100%");
         break;
       case '5':
-        sport_range[0].style.backgroundSize="100% 100%";
+        sport_range.css("backgroundSize","100% 100%");
         break;
       default:
 
     }
+},false)
+
+sport_button = $('.sport_button');
+sport = $(".sport");
+book = $(".game");
+sport_button[0].addEventListener('touchstart',function(){
+  sport.hide(500);
+  book.show(500);
 },false)
