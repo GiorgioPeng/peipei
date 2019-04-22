@@ -3,29 +3,29 @@ let book_main_photo = $(".book_main_photo");
 let book_p = $(".book_fu p");
 let book = $(".game");
 book_button[0].addEventListener('touchstart',function(){
-  book[0].style.display="none";
-  smoking[0].style.display="block";
+  book.hide(500);
+  smoking.show(500);
 },false);
 let book_range = $("#book_range");
 book_range[0].addEventListener("change",function(){
-    switch (book_range[0].value) {
+    switch (book_range.val()) {
       case '0':
-        book_range[0].style.backgroundSize="0% 100%";
+        book_range.css("backgroundSize","0% 100%");
         break;
       case '1':
-        book_range[0].style.backgroundSize="20% 100%";
+        book_range.css("backgroundSize","20% 100%");
         break;
       case '2':
-        book_range[0].style.backgroundSize="40% 100%";
+        book_range.css("backgroundSize","40% 100%");
         break;
       case '3':
-        book_range[0].style.backgroundSize="60% 100%";
+        book_range.css("backgroundSize","60% 100%");
         break;
       case '4':
-        book_range[0].style.backgroundSize="80% 100%";
+        book_range.css("backgroundSize","80% 100%");
         break;
       case '5':
-        book_range[0].style.backgroundSize="100% 100%";
+        book_range.css("backgroundSize","100% 100%");
         break;
       default:
 
