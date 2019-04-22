@@ -18,39 +18,39 @@ topLogo[i].addEventListener("touchstart",function(event){
       // console.log(choose);
       switch (choose) {
         case 'logoForGames':
-          game[0].style.display="block";
-          sport[0].style.display="none";
-          smoking[0].style.display="none";
-          information[0].style.display="none";
-          sleep[0].style.display="none";
+          game.show(500);
+          sport.hide(500);
+          smoking.hide(500);
+          information.hide(500);
+          sleep.hide(500);
           break;
         case 'logoForSports':
-          sport[0].style.display="block";
-          sleep[0].style.display="none";
-          smoking[0].style.display="none";
-          information[0].style.display="none";
-          game[0].style.display="none";
+          sport.show(500);
+          sleep.hide(500);
+          smoking.hide(500);
+          information.hide(500);
+          game.hide(500);
           break;
         case 'logoForSmoking':
-          smoking[0].style.display="block";
-          game[0].style.display="none";
+          smoking.show(500);
+          game.hide(500);
           information[0].style.display='none';
-          sleep[0].style.display="none";
-          sport[0].style.display="none";
+          sleep.hide(500);
+          sport.hide(500);
           break;
         case 'logoForInformation':
-          information[0].style.display="block";
-          game[0].style.display="none";
-          sleep[0].style.display="none";
-          sport[0].style.display="none";
-          smoking[0].style.display="none";
+          information.show(500);
+          game.hide(500);
+          sleep.hide(500);
+          sport.hide(500);
+          smoking.hide(500);
           break;
         case 'logoForSleepTime':
-          sleep[0].style.display="block";
-          smoking[0].style.display="none";
-          sport[0].style.display="none";
-          information[0].style.display="none";
-          game[0].style.display="none";
+          sleep.show(500);
+          smoking.hide(500);
+          sport.hide(500);
+          information.hide(500);
+          game.hide(500);
           break;
         default:
 
