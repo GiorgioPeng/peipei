@@ -114,6 +114,69 @@ body{
   border-color:transparent;
 }
 
+#major_choose p{
+  margin: 0;
+  padding: 0
+}
+
+.major_choose{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+.major_choose_detail{
+  width: 75%;
+  background-color:  #90b4f0;
+  border-color: #5e5c51;
+  font-weight: bold;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 20%;
+}
+
+#n_o_s p{
+  margin: 0;
+  padding: 0
+}
+#area_choose{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+}
+.area_choose_detail{
+  width: 75%;
+  background-color:  #90b4f0;
+  border-color: #5e5c51;
+  font-weight: bold;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 20%;
+}
+
+#provence p {
+  margin: 0;
+  padding: 0;
+}
+#s_provence,#n_provence{
+  height: 30vh;
+  position: relative;
+  overflow: scroll;
+  z-index: 3;
+}
+.p_choose{
+  width: 75%;
+  background-color:  #90b4f0;
+  border-color: #5e5c51;
+  font-weight: bold;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 20%;
+}
+
 #information_sex{
   height: 5.08vh;
   width: 36.38vw;
@@ -740,29 +803,25 @@ input[name="sportsTypes"]{
   width: 100%;
   overflow: auto;
   display: flex;
-
 }
 
 .smoking_air_cold{
   width: 50%;
   height: 100%;
-  display: inline-flex;
   overflow-y: scroll;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-
+.smoking_air_cold div{
+  text-align: center;
+}
 .smoking_air_cold::-webkit-scrollbar { width: 0 !important }
 
 .smoking_air_hot{
   width: 50%;
   height: 100%;
-  display: inline-flex;
   overflow-y: scroll;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+.smoking_air_hot div{
+  text-align: center;
 }
 .smoking_air_hot::-webkit-scrollbar { width: 0 !important }
 
@@ -835,10 +894,10 @@ input[name="smoking_range"]::-webkit-slider-thumb {
   background: -webkit-linear-gradient(#90b4f0, #90b4f0) no-repeat, #f2f2f2;
   outline: none;
   background-size: 0% 100%; /*这条语句第一个参数用来控制滑动条颜色的长度*/
-  height: 1px;
+  height: 3px;
   position: relative;
   left: 23vw;
-  width:40.76vw;
+  width:42vw;
   transition: background-size 0.1s linear;
 }
 #book_range::-webkit-slider-thumb {
