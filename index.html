@@ -22,13 +22,13 @@
         <input type="text" class="information_personal" placeholder="学校">
         <input type="text" class="information_personal" placeholder="姓名">
         <input type="text" class="information_personal" placeholder="学号">
-        <div class="information_choose" name="">请选择专业
+        <div class="information_choose" id="major_choose"><p>请选择专业</p>
           <div class="major_choose" style="display:none">
-            <div value="计科">计科</div>
-            <div value="环境">环境</div>
-            <div value="信管">信管</div>
-            <div value="数媒">数媒</div>
-            <div value="工商">工商</div>
+            <div class="major_choose_detail">计科</div>
+            <div class="major_choose_detail">环境</div>
+            <div class="major_choose_detail">信管</div>
+            <div class="major_choose_detail">数媒</div>
+            <div class="major_choose_detail">工商</div>
           </div>
         </div>
        </div>
@@ -45,13 +45,13 @@
     </div>
     <div class="information_kuang information_earth">
       <div class="information_choose_kuang">
-        <div id="n_o_s" class="information_choose" required name="">请选择南方或北方
-          <div style="display:none">
-            <div value="南方">南方</div>
-            <div value="北方">北方</div>
+        <div id="n_o_s" class="information_choose" ><p>请选择南方或北方</p>
+          <div id="area_choose" style="display:none">
+            <div class="area_choose_detail">南方</div>
+            <div class="area_choose_detail">北方</div>
           </div>
         </div>
-        <div id="provence" class="information_choose" name="">请选择省份
+        <div id="provence" class="information_choose" name=""><p>请选择省份</p>
             <div id="s_provence" class="provence_choose" style="display:none">
               <div class="p_choose">江苏</div>
               <div class="p_choose">安徽</div>
@@ -289,20 +289,6 @@
         <div class="smoking_air_cold">
           <div>&nbsp;</div>
           <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
           <div style="color:#1a6a6f">16</div>
           <div style="color:#1a6a6f">17</div>
           <div style="color:#1a6a6f">18</div>
@@ -324,35 +310,21 @@
         <div class="smoking_air_hot">
           <div>&nbsp;</div>
           <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div style="color:#1a6a6f">16</div>
-          <div style="color:#1a6a6f">17</div>
-          <div style="color:#1a6a6f">18</div>
-          <div style="color:#1a6a6f">19</div>
-          <div style="color:#1a6a6f">20</div>
-          <div style="color:#1a6a6f">21</div>
-          <div style="color:#1a6a6f">22</div>
-          <div style="color:#1a6a6f">23</div>
-          <div style="color:#1a6a6f">24</div>
-          <div style="color:#1a6a6f">25</div>
-          <div style="color:#1a6a6f">26</div>
-          <div style="color:#1a6a6f">27</div>
-          <div style="color:#1a6a6f">28</div>
-          <div style="color:#1a6a6f">29</div>
-          <div style="color:#1a6a6f">30</div>
+          <div style="color:#983636">16</div>
+          <div style="color:#983636">17</div>
+          <div style="color:#983636">18</div>
+          <div style="color:#983636">19</div>
+          <div style="color:#983636">20</div>
+          <div style="color:#983636">21</div>
+          <div style="color:#983636">22</div>
+          <div style="color:#983636">23</div>
+          <div style="color:#983636">24</div>
+          <div style="color:#983636">25</div>
+          <div style="color:#983636">26</div>
+          <div style="color:#983636">27</div>
+          <div style="color:#983636">28</div>
+          <div style="color:#983636">29</div>
+          <div style="color:#983636">30</div>
           <div>&nbsp;</div>
           <div>&nbsp;</div>
         </div>
@@ -361,11 +333,11 @@
     <div class="smoking_smoke">
       <input type="radio" id="smoking_true" name="whether_smoke" value="是">
       <label for="smoking_true">
-        <div style="color:#c86200;transition:all 1s linear;">是</div>
+        <div style="color:#c86200;transition:all 0.1s linear;width:2vw">是</div>
       </label>
       <input type="radio" id="smoking_false" name="whether_smoke" value="否">
       <label for="smoking_false">
-        <div style="color:#a2a1a4;transition:all 1s linear;">否</div>
+        <div style="color:#a2a1a4;transition:all 0.1s linear;width:2vw">否</div>
       </label>
       <input type="range" name="smoking_range" value="0" min="0" max="5" step="1">
     </div>
