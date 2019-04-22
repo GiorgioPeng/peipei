@@ -227,7 +227,6 @@ chooseNumberTime1[0].addEventListener("touchend",function(event){
 //切换到下一个页面  运动
 var sleep_button = $('.sleep_button');
 sleep_button[0].addEventListener('touchstart',function(){
-  sleep.fadeOut();
-  sleep[0].style.display="none";
-  sport[0].style.display="block";
+  sleep.hide(500);
+  sport.show(500);
 },false)
