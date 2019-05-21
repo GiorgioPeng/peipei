@@ -1,354 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Giorgio Peng">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/css.css">
-  <script src="js/jquery.min.js"></script>
-  <title>demo</title>
-</head>
-<body>
-  <div class="container information"  >
-    <div class="topLogo">
-      <div><img class="clickLogo logoForInformation" src="img/个人信息/个人信息.png" alt=""></div>
-      <div><img class="initialLogo logoForSleepTime" src="img/个人信息/早睡晚睡时间.png" alt=""></div>
-      <div><img class="initialLogo logoForSports" src="img/个人信息/运动.png" alt=""></div>
-      <div><img class="initialLogo logoForGames" src="img/个人信息/游戏.png" alt=""></div>
-      <div><img class="initialLogo logoForSmoking" src="img/个人信息/空调抽烟.png" alt=""></div>
-    </div>
-    <div class="information_kuang information_people">
-      <div id="information_detail">
-        <input type="text" class="information_personal" placeholder="学校">
-        <input type="text" class="information_personal" placeholder="姓名">
-        <input type="text" class="information_personal" placeholder="学号">
-        <div class="information_choose" id="major_choose"><p>请选择专业</p>
-          <div class="major_choose" style="display:none">
-            <div class="major_choose_detail">计科</div>
-            <div class="major_choose_detail">环境</div>
-            <div class="major_choose_detail">信管</div>
-            <div class="major_choose_detail">数媒</div>
-            <div class="major_choose_detail">工商</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="author" content="Giorgio Peng">
+    <meta name="x5-fullscreen"content="true">
+    <meta name="x5-orientation"content="portrait">
+    <meta name="full-screen"content="yes">
+    <meta name="screen-orientation"content="portrait">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="css/popoPicker.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="js/popoPicker.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <title>demo</title>
+  </head>
+  <body>
+    <div class="container information">
+      <div class="topLogo">
+        <div><img class="clickLogo logoForInformation" src="img/个人信息/个人信息.png" alt=""></div>
+        <div><img class="initialLogo logoForSleepTime" src="img/个人信息/早睡晚睡时间.png" alt=""></div>
+        <div><img class="initialLogo logoForSports" src="img/个人信息/运动.png" alt=""></div>
+        <div><img class="initialLogo logoForGames" src="img/个人信息/游戏.png" alt=""></div>
+        <div><img class="initialLogo logoForSmoking" src="img/个人信息/空调抽烟.png" alt=""></div>
+      </div>
+      <div class="information_kuang information_people">
+        <div id="information_detail">
+          <input type="text" name="school" class="information_personal" placeholder="学校">
+          <input type="text" name="studentName" class="information_personal" placeholder="姓名">
+          <input type="text" name="studentID" class="information_personal" placeholder="学号">
+          <div class="information_choose" style="height:25%" id="major_choose"><p>请选择专业</p>
+            <div class="major_choose" style="display:none">
+              <div class="major_choose_detail">计科</div>
+              <div class="major_choose_detail">环境</div>
+              <div class="major_choose_detail">信管</div>
+              <div class="major_choose_detail">数媒</div>
+              <div class="major_choose_detail">工商</div>
+            </div>
+          </div>
+         </div>
+        <div id="information_sex">
+          <input type="radio" name="sex" id="male" value="male">
+          <label for="male">
+            <img src="img/个人信息/男灰.png" alt="">
+          </label>
+          <input type="radio" name="sex" id="female" value="female">
+          <label for="female">
+            <img src="img/个人信息/女灰.png" alt="">
+          </label>
+        </div>
+      </div>
+      <div class="information_kuang information_earth">
+        <div class="information_choose_kuang">
+          <div id="n_o_s" class="information_choose" ><p>请选择南方或北方</p>
+            <div id="area_choose" style="display:none">
+              <div class="area_choose_detail">南方</div>
+              <div class="area_choose_detail">北方</div>
+            </div>
+          </div>
+          <div id="province" class="information_choose" name=""><p>请选择省份</p>
+              <div id="s_province" class="province_choose" style="display:none">
+                <div class="p_choose">江苏</div>
+                <div class="p_choose">安徽</div>
+                <div class="p_choose">上海</div>
+                <div class="p_choose">浙江</div>
+                <div class="p_choose">福建</div>
+                <div class="p_choose">江西</div>
+                <div class="p_choose">湖北</div>
+                <div class="p_choose">湖南</div>
+                <div class="p_choose">四川</div>
+                <div class="p_choose">重庆</div>
+                <div class="p_choose">云南</div>
+                <div class="p_choose">贵州</div>
+                <div class="p_choose">西藏</div>
+                <div class="p_choose">广西</div>
+                <div class="p_choose">广东</div>
+                <div class="p_choose">海南</div>
+                <div class="p_choose">台湾</div>
+                <div class="p_choose">香港</div>
+                <div class="p_choose">澳门</div>
+              </div>
+              <div id="n_province" class="province_choose" style="display:none">
+                  <div class="p_choose">北京</div>
+                  <div class="p_choose">天津</div>
+                  <div class="p_choose">内蒙</div>
+                  <div class="p_choose">新疆</div>
+                  <div class="p_choose">河北</div>
+                  <div class="p_choose">甘肃</div>
+                  <div class="p_choose">宁夏</div>
+                  <div class="p_choose">山西</div>
+                  <div class="p_choose">陕西</div>
+                  <div class="p_choose">青海</div>
+                  <div class="p_choose">山东</div>
+                  <div class="p_choose">河南</div>
+                  <div class="p_choose">辽宁</div>
+                  <div class="p_choose">吉林</div>
+                  <div class="p_choose">黑龙江</div>
+              </div>
           </div>
         </div>
-       </div>
-      <div id="information_sex">
-        <input type="radio" name="sex" id="male" value="male">
-        <label for="male">
-          <img src="img/个人信息/男灰.png" alt="">
-        </label>
-        <input type="radio" name="sex" id="female" value="female">
-        <label for="female">
-          <img src="img/个人信息/女灰.png" alt="">
-        </label>
+          <input type="range" id="information_range" style="background-size:0% 100%" value="0" min="0" max="5" step="1">
+          <div class="information_footer">
+            <p style="font-size:1.95vw;color:#ceccd1">不敏感</p>
+            <p style="font-size:1.95vw;color:#ceccd1">极敏感</p>
+          </div>
+
       </div>
+      <p id="information_hint">女性更需要群体的归属和认同,跨地域文化,天然亲近感较弱</p>
+      <div class="button information_button"></div>
     </div>
-    <div class="information_kuang information_earth">
-      <div class="information_choose_kuang">
-        <div id="n_o_s" class="information_choose" ><p>请选择南方或北方</p>
-          <div id="area_choose" style="display:none">
-            <div class="area_choose_detail">南方</div>
-            <div class="area_choose_detail">北方</div>
+    <div class="container sleep" style="display:none">
+      <div class="topLogo">
+        <div><img class="initialLogo logoForInformation" src="img/睡眠/个人信息.png" alt=""></div>
+        <div><img class="clickLogo logoForSleepTime" src="img/睡眠/早睡晚睡时间.png" alt=""></div>
+        <div><img class="initialLogo logoForSports" src="img/睡眠/运动.png" alt=""></div>
+        <div><img class="initialLogo logoForGames" src="img/睡眠/游戏.png" alt=""></div>
+        <div><img class="initialLogo logoForSmoking" src="img/睡眠/空调抽烟.png" alt=""></div>
+      </div>
+      <div class="sleep_left">
+          <img src="img/睡眠/竖线.png" alt="">
+      </div>
+      <div class="sleep_right">
+          <div class="sleep_information"></div>
+          <div class="sleep_setTime1 sleep_setTime"><p>点击添加平均起床时段</p></div>
+          <div class="sleep_setTime2 sleep_setTime"><p>点击添加平均睡眠时段</p></div>
+      </div>
+      <div class="sleep_word1">
+        <p>该条件重要程度</p>
+      </div>
+      <input type="range" id="sleep_range" min="0" max="5" step="1" value="0">
+      <div class="button sleep_button" style="position:relative;top:-4vh;"></div>
+    </div>
+    <div id="container1">
+      <div id="top">
+        <div id="getUp" class="time"></div>
+        <div id="goBed" class="time"></div>
+      </div>
+      <div id='get_up_time_choose' style="display:none">
+        <div id="chooseTime">
+            <div><p>0</p></div>
+            <div><p>8</p></div>
+            <div><p>0</p></div>
+            <div><p>1</p></div>
+            <div><p>0</p></div>
+            <div><p>9</p></div>
+            <div><p>0</p></div>
+            <div><p>0</p></div>
+        </div>
+        <div id="chooseTimeShadow">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="back"></div>
+        <div id="chooseNumberTime">
+          <div class="time1">7:00之前</div>
+          <div class="time2">7:01-8:00</div>
+          <div class="time3">8:01-9:00</div>
+          <div class="time4">9:01-10:00</div>
+          <div class="time5">10:01之后</div>
+        </div>
+        <div>
+          <div id="AM">AM.</div>
+          <div id="Time"></div>
+        </div>
+      </div>
+      <div id='go_bed_time_choose' style="display:none">
+        <div id="chooseTime1">
+            <div><p>2</p></div>
+            <div><p>1</p></div>
+            <div><p>0</p></div>
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>2</p></div>
+            <div><p>0</p></div>
+            <div><p>0</p></div>
+        </div>
+        <div id="chooseTimeShadow1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="back1"></div>
+        <div id="chooseNumberTime1">
+          <div class="time1">21:00之前</div>
+          <div class="time2">21:01-22:00</div>
+          <div class="time3">22:01-23:00</div>
+          <div class="time4">23:01-24:00</div>
+          <div class="time5">24:01之后</div>
+        </div>
+        <div>
+          <div id="PM">PM.</div>
+          <div id="Time1"></div>
+        </div>
+      </div>
+      <!-- <div id="setTimeButton"></div> -->
+
+    </div>
+    <div class="container sport" style="display:none">
+      <div class="topLogo">
+        <div><img class="initialLogo logoForInformation" src="img/运动/个人信息.png" alt=""></div>
+        <div><img class="initialLogo logoForSleepTime" src="img/运动/早睡晚睡时间.png" alt=""></div>
+        <div><img class="clickLogo logoForSports" src="img/运动/运动.png" alt=""></div>
+        <div><img class="initialLogo logoForGames" src="img/运动/游戏.png" alt=""></div>
+        <div><img class="initialLogo logoForSmoking" src="img/运动/空调抽烟.png" alt=""></div>
+      </div>
+      <div class="sport_word1">
+        选择日常进行的运动 若没有可直接进入下一项
+      </div>
+      <div class="sport_picture">
+        <input name="sportsTypes" id="running" value="running" type="checkbox">
+        <label for="running"><img src="img/运动/选项框拷贝8.png" id="runningCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="badminton" value="badminton" type="checkbox">
+        <label for="badminton"><img src="img/运动/选项框拷贝8.png" id="badmintonCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="basketball" value="basketball" type="checkbox">
+        <label for="basketball"><img src="img/运动/选项框拷贝8.png" id="basketballCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="football" value="football" type="checkbox">
+        <label for="football"><img src="img/运动/选项框拷贝8.png" id="footballCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="bike" value="bike" type="checkbox">
+        <label for="bike"><img src="img/运动/选项框拷贝8.png" id="bikeCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="swimming" value="swimming" type="checkbox">
+        <label for="swimming"><img src="img/运动/选项框拷贝8.png" id="swimmingCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="bodyBuilding" value="bodyBuilding" type="checkbox">
+        <label for="bodyBuilding"><img src="img/运动/选项框拷贝8.png" id="bodyBuildingCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="pingpangball" value="pingpangball" type="checkbox">
+        <label for="pingpangball"><img src="img/运动/选项框拷贝8.png" id="pingpangballCheck" class="checkboxForSports"></label>
+
+        <input name="sportsTypes" id="yoga" value="yoga" type="checkbox">
+        <label for="yoga"><img src="img/运动/选项框拷贝8.png" id="yogaCheck" class="checkboxForSports"></label>
+      </div>
+      <div class="sport_word2">
+      该条件重要程度
+      </div>
+      <input type="range" id="sport_range" min="0" max="5" step="1" value="0">
+      <div class="button sport_button"></div>
+    </div>
+    <div class="container game" style="display:none">
+      <div class="topLogo">
+        <div><img class="initialLogo logoForInformation" src="img/书籍/个人信息.png" alt=""></div>
+        <div><img class="initialLogo logoForSleepTime" src="img/书籍/早睡晚睡时间.png" alt=""></div>
+        <div><img class="initialLogo logoForSports" src="img/书籍/运动.png" alt=""></div>
+        <div><img class="clickLogo logoForGames" src="img/书籍/游戏.png" alt=""></div>
+        <div><img class="initialLogo logoForSmoking" src="img/书籍/空调抽烟.png" alt=""></div>
+      </div>
+      <div class="book_photo">
+        <div class="book_main_photo"></div>
+      </div>
+      <div class="book_choose">
+         <div class="book_choose_title">
+           <div>喜 爱 的 书 籍 类 型</div>
+         </div>
+         <div class="book_choose_type">
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>二次元</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>技术</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>科幻</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>恐怖</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>漫画</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>推理</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>网游</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>文学</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>武侠</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>玄幻</p><img src="img/书籍/小消息.png"/></div>
+              <div class="book_fu"><img class="book_choose_logo" src="img/书籍/Group108.png"/><p>言情</p><img src="img/书籍/小消息.png"/></div>
+         </div>
+      </div>
+      <div class="book_word">
+      该条件重要程度
+      </div>
+      <input type="range" id="book_range" min="0" max="5" step="1" value="0">
+      <div class="book_button button"></div>
+    </div>
+    <div class="container smoking" style="display:none">
+      <div class="topLogo">
+        <div><img class="initialLogo logoForInformation" src="img/空调抽烟/个人信息.png" alt=""></div>
+        <div><img class="initialLogo logoForSleepTime" src="img/空调抽烟/早睡晚睡时间.png" alt=""></div>
+        <div><img class="initialLogo logoForSports" src="img/空调抽烟/运动.png" alt=""></div>
+        <div><img class="initialLogo logoForGames" src="img/空调抽烟/游戏.png" alt=""></div>
+        <div><img class="clickLogo logoForSmoking" src="img/空调抽烟/空调抽烟.png" alt=""></div>
+      </div>
+      <div class="smoking_tem_choose">
+        <div class="smoking_air_choose">
+          <div class="smoking_air_cold">
+            <input class="js-tem-cold" placeholder="请选择冷空调温度" readonly="readonly" unselectable="on">
+          </div>
+          <div class="smoking_air_hot">
+            <input class="js-tem-hot" placeholder="请选择热空调温度" readonly="readonly" unselectable="on">
           </div>
         </div>
-        <div id="provence" class="information_choose" name=""><p>请选择省份</p>
-            <div id="s_provence" class="provence_choose" style="display:none">
-              <div class="p_choose">江苏</div>
-              <div class="p_choose">安徽</div>
-              <div class="p_choose">上海</div>
-              <div class="p_choose">浙江</div>
-              <div class="p_choose">福建</div>
-              <div class="p_choose">江西</div>
-              <div class="p_choose">湖北</div>
-              <div class="p_choose">湖南</div>
-              <div class="p_choose">四川</div>
-              <div class="p_choose">重庆</div>
-              <div class="p_choose">云南</div>
-              <div class="p_choose">贵州</div>
-              <div class="p_choose">西藏</div>
-              <div class="p_choose">广西</div>
-              <div class="p_choose">广东</div>
-              <div class="p_choose">海南</div>
-              <div class="p_choose">台湾</div>
-              <div class="p_choose">香港</div>
-              <div class="p_choose">澳门</div>
-            </div>
-            <div id="n_provence" class="provence_choose" style="display:none">
-                <div class="p_choose">北京</div>
-                <div class="p_choose">天津</div>
-                <div class="p_choose">内蒙</div>
-                <div class="p_choose">新疆</div>
-                <div class="p_choose">河北</div>
-                <div class="p_choose">甘肃</div>
-                <div class="p_choose">宁夏</div>
-                <div class="p_choose">山西</div>
-                <div class="p_choose">陕西</div>
-                <div class="p_choose">青海</div>
-                <div class="p_choose">山东</div>
-                <div class="p_choose">河南</div>
-                <div class="p_choose">辽宁</div>
-                <div class="p_choose">吉林</div>
-                <div class="p_choose">黑龙江</div>
-            </div>
-        </div>
       </div>
-        <input type="range" id="information_range" style="background-size:0% 100%" value="0" min="0" max="5" step="1">
-        <div class="information_footer">
-          <p style="font-size:1.95vw;color:#ceccd1">不敏感</p>
-          <p style="font-size:1.95vw;color:#ceccd1">极敏感</p>
-        </div>
-
-    </div>
-    <div class="button information_button"></div>
-  </div>
-  <div class="container sleep" style="display:none">
-    <div class="topLogo">
-      <div><img class="initialLogo logoForInformation" src="img/睡眠/个人信息.png" alt=""></div>
-      <div><img class="clickLogo logoForSleepTime" src="img/睡眠/早睡晚睡时间.png" alt=""></div>
-      <div><img class="initialLogo logoForSports" src="img/睡眠/运动.png" alt=""></div>
-      <div><img class="initialLogo logoForGames" src="img/睡眠/游戏.png" alt=""></div>
-      <div><img class="initialLogo logoForSmoking" src="img/睡眠/空调抽烟.png" alt=""></div>
-    </div>
-    <div class="sleep_left">
-        <img src="img/睡眠/竖线.png" alt="">
-    </div>
-    <div class="sleep_right">
-        <div class="sleep_information"></div>
-        <div class="sleep_setTime1 sleep_setTime"><p>点击添加平均睡眠时段</p></div>
-        <div class="sleep_setTime2 sleep_setTime"><p>点击添加平均睡眠时段</p></div>
-    </div>
-    <div class="button sleep_button" style="position:relative;top:57vh;"></div>
-  </div>
-  <div id="container1">
-    <div id="top">
-      <div id="getUp" class="time"></div>
-      <div id="goBed" class="time"></div>
-    </div>
-    <div id='get_up_time_choose' style="display:none">
-      <div id="chooseTime">
-          <div><p>0</p></div>
-          <div><p>8</p></div>
-          <div><p>0</p></div>
-          <div><p>1</p></div>
-          <div><p>0</p></div>
-          <div><p>9</p></div>
-          <div><p>0</p></div>
-          <div><p>0</p></div>
+      <div class="smoking_smoke">
+        <input type="radio" id="smoking_true" name="whether_smoke" value="yes">
+        <label for="smoking_true">
+          <div style="color:#c86200;transition:all 0.1s linear;width:2vw">是</div>
+        </label>
+        <input type="radio" id="smoking_false" name="whether_smoke" value="no">
+        <label for="smoking_false">
+          <div style="color:#a2a1a4;transition:all 0.1s linear;width:2vw">否</div>
+        </label>
+        <input type="range" name="smoking_range" value="0" min="0" max="5" step="1">
       </div>
-      <div id="chooseTimeShadow">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div id="back"></div>
-      <div id="chooseNumberTime">
-        <div class="time1">7:00之前</div>
-        <div class="time2">7:01-8:00</div>
-        <div class="time3">8:01-9:00</div>
-        <div class="time4">9:01-10:00</div>
-        <div class="time5">10:01之后</div>
-      </div>
-      <div>
-        <div id="AM">AM.</div>
-        <div id="Time"></div>
-      </div>
+      <div class="air_word"><p>您对空调温度的在意程度:</p></div>
+      <input type="range" name="air_range" value="3" min="0" max="5" step="1">
+      <div class="button" id="submit_button"></div>
     </div>
-    <div id='go_bed_time_choose' style="display:none">
-      <div id="chooseTime1">
-          <div><p>2</p></div>
-          <div><p>1</p></div>
-          <div><p>0</p></div>
-          <div><p>1</p></div>
-          <div><p>2</p></div>
-          <div><p>2</p></div>
-          <div><p>0</p></div>
-          <div><p>0</p></div>
-      </div>
-      <div id="chooseTimeShadow1">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div id="back1"></div>
-      <div id="chooseNumberTime1">
-        <div class="time1">21:00之前</div>
-        <div class="time2">21:01-22:00</div>
-        <div class="time3">22:01-23:00</div>
-        <div class="time4">23:01-24:00</div>
-        <div class="time5">24:01之后</div>
-      </div>
-      <div>
-        <div id="PM">PM.</div>
-        <div id="Time1"></div>
-      </div>
-    </div>
-    <!-- <div id="setTimeButton"></div> -->
-
-  </div>
-  <div class="container sport" style="display:none">
-    <div class="topLogo">
-      <div><img class="initialLogo logoForInformation" src="img/运动/个人信息.png" alt=""></div>
-      <div><img class="initialLogo logoForSleepTime" src="img/运动/早睡晚睡时间.png" alt=""></div>
-      <div><img class="clickLogo logoForSports" src="img/运动/运动.png" alt=""></div>
-      <div><img class="initialLogo logoForGames" src="img/运动/游戏.png" alt=""></div>
-      <div><img class="initialLogo logoForSmoking" src="img/运动/空调抽烟.png" alt=""></div>
-    </div>
-    <div class="sport_word1">
-      选择日常进行的运动 若没有可直接进入下一项
-    </div>
-    <div class="sport_picture">
-      <input name="sportsTypes" id="running" type="checkbox">
-      <label for="running"><img src="img/运动/选项框拷贝8.png" id="runningCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="badminton" type="checkbox">
-      <label for="badminton"><img src="img/运动/选项框拷贝8.png" id="badmintonCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="basketball" type="checkbox">
-      <label for="basketball"><img src="img/运动/选项框拷贝8.png" id="basketballCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="football" type="checkbox">
-      <label for="football"><img src="img/运动/选项框拷贝8.png" id="footballCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="bike" type="checkbox">
-      <label for="bike"><img src="img/运动/选项框拷贝8.png" id="bikeCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="swimming" type="checkbox">
-      <label for="swimming"><img src="img/运动/选项框拷贝8.png" id="swimmingCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="bodyBuilding" type="checkbox">
-      <label for="bodyBuilding"><img src="img/运动/选项框拷贝8.png" id="bodyBuildingCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="pingpangball" type="checkbox">
-      <label for="pingpangball"><img src="img/运动/选项框拷贝8.png" id="pingpangballCheck" class="checkboxForSports"></label>
-
-      <input name="sportsTypes" id="yoga" type="checkbox">
-      <label for="yoga"><img src="img/运动/选项框拷贝8.png" id="yogaCheck" class="checkboxForSports"></label>
-    </div>
-    <div class="sport_word2">
-    该条件重要程度
-    </div>
-    <input type="range" id="sport_range" min="0" max="5" step="1" value="0">
-    <div class="button sport_button">
-    </div>
-  </div>
-  <div class="container game" style="display:none">
-    <div class="topLogo">
-      <div><img class="initialLogo logoForInformation" src="img/书籍/个人信息.png" alt=""></div>
-      <div><img class="initialLogo logoForSleepTime" src="img/书籍/早睡晚睡时间.png" alt=""></div>
-      <div><img class="initialLogo logoForSports" src="img/书籍/运动.png" alt=""></div>
-      <div><img class="clickLogo logoForGames" src="img/书籍/游戏.png" alt=""></div>
-      <div><img class="initialLogo logoForSmoking" src="img/书籍/空调抽烟.png" alt=""></div>
-    </div>
-    <div class="book_photo">
-      <div class="book_main_photo"></div>
-    </div>
-    <div class="book_choose">
-       <div class="book_choose_title">
-         <div><b>喜 爱 的 书 籍 类 型</b></div>
-       </div>
-       <div class="book_choose_type">
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>二次元</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>技术</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>科幻</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>恐怖</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>漫画</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>推理</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>网游</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>文学</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>武侠</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>玄幻</p><img src="img/书籍/小消息.png"/></div>
-            <div class="book_fu"><img src="img/书籍/Group108.png"/><p>言情</p><img src="img/书籍/小消息.png"/></div>
-       </div>
-    </div>
-    <div class="book_word">
-    该条件重要程度
-    </div>
-    <input type="range" id="book_range" min="0" max="5" step="1" value="0">
-    <div class="book_button button"></div>
-  </div>
-  <div class="container smoking" style="display:none">
-    <div class="topLogo">
-      <div><img class="initialLogo logoForInformation" src="img/空调抽烟/个人信息.png" alt=""></div>
-      <div><img class="initialLogo logoForSleepTime" src="img/空调抽烟/早睡晚睡时间.png" alt=""></div>
-      <div><img class="initialLogo logoForSports" src="img/空调抽烟/运动.png" alt=""></div>
-      <div><img class="initialLogo logoForGames" src="img/空调抽烟/游戏.png" alt=""></div>
-      <div><img class="clickLogo logoForSmoking" src="img/空调抽烟/空调抽烟.png" alt=""></div>
-    </div>
-    <div class="smoking_tem_choose">
-      <div class="smoking_air_choose">
-        <div class="smoking_air_cold">
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div style="color:#1a6a6f">16</div>
-          <div style="color:#1a6a6f">17</div>
-          <div style="color:#1a6a6f">18</div>
-          <div style="color:#1a6a6f">19</div>
-          <div style="color:#1a6a6f">20</div>
-          <div style="color:#1a6a6f">21</div>
-          <div style="color:#1a6a6f">22</div>
-          <div style="color:#1a6a6f">23</div>
-          <div style="color:#1a6a6f">24</div>
-          <div style="color:#1a6a6f">25</div>
-          <div style="color:#1a6a6f">26</div>
-          <div style="color:#1a6a6f">27</div>
-          <div style="color:#1a6a6f">28</div>
-          <div style="color:#1a6a6f">29</div>
-          <div style="color:#1a6a6f">30</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-        </div>
-        <div class="smoking_air_hot">
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <div style="color:#983636">16</div>
-          <div style="color:#983636">17</div>
-          <div style="color:#983636">18</div>
-          <div style="color:#983636">19</div>
-          <div style="color:#983636">20</div>
-          <div style="color:#983636">21</div>
-          <div style="color:#983636">22</div>
-          <div style="color:#983636">23</div>
-          <div style="color:#983636">24</div>
-          <div style="color:#983636">25</div>
-          <div style="color:#983636">26</div>
-          <div style="color:#983636">27</div>
-          <div style="color:#983636">28</div>
-          <div style="color:#983636">29</div>
-          <div style="color:#983636">30</div>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-        </div>
-      </div>
-    </div>
-    <div class="smoking_smoke">
-      <input type="radio" id="smoking_true" name="whether_smoke" value="是">
-      <label for="smoking_true">
-        <div style="color:#c86200;transition:all 0.1s linear;width:2vw">是</div>
-      </label>
-      <input type="radio" id="smoking_false" name="whether_smoke" value="否">
-      <label for="smoking_false">
-        <div style="color:#a2a1a4;transition:all 0.1s linear;width:2vw">否</div>
-      </label>
-      <input type="range" name="smoking_range" value="0" min="0" max="5" step="1">
-    </div>
-  </div>
-</body>
-<script src="js/jsForInformation.js"></script>
-<script src="js/jsForChooseSleepTime.js"></script>
-<script src="js/jsForChooseSports.js"></script>
-<script src="js/jsForToggleTheTopLogo.js"></script>
-<script src="js/jsForAirSmoking.js"></script>
-<script src="js/jsForBook.js"></script>
+  </body>
+  <script type="text/javascript">
+    new popoPicker('.js-tem-cold',{
+      container:'.smoking_air_cold',
+      wheels: [{
+          infinite: true,
+          //selected: 3,
+          data:[
+              {value:16,display:'16'},
+              {value:17,display:'17'},
+              {value:18,display:'18'},
+              {value:19,display:'19'},
+              {value:20,display:'20'},
+              {value:21,display:'21'},
+              {value:22,display:'22'},
+              {value:23,display:'23'},
+              {value:24,display:'24'},
+              {value:25,display:'25'},
+              {value:26,display:'26'},
+              {value:27,display:'27'},
+              {value:28,display:'28'},
+              {value:29,display:'29'},
+              {value:30,display:'30'}
+          ]
+      }],
+      background:'light',
+    });
+    new popoPicker('.js-tem-hot',{
+      container:'.smoking_air_hot',
+      wheels: [{
+          infinite: true,
+          //selected: 3,
+          data:[
+              {value:16,display:'16'},
+              {value:17,display:'17'},
+              {value:18,display:'18'},
+              {value:19,display:'19'},
+              {value:20,display:'20'},
+              {value:21,display:'21'},
+              {value:22,display:'22'},
+              {value:23,display:'23'},
+              {value:24,display:'24'},
+              {value:25,display:'25'},
+              {value:26,display:'26'},
+              {value:27,display:'27'},
+              {value:28,display:'28'},
+              {value:29,display:'29'},
+              {value:30,display:'30'}
+          ]
+      }],
+      background:'light',
+    });
+  </script>
+  <script src="js/jsForInformation.js"></script>
+  <script src="js/jsForChooseSleepTime.js"></script>
+  <script src="js/jsForChooseSports.js"></script>
+  <script src="js/jsForToggleTheTopLogo.js"></script>
+  <script src="js/jsForAirSmoking.js"></script>
+  <script src="js/jsForBook.js"></script>
 </html>
