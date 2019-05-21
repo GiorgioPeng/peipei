@@ -33,18 +33,16 @@ book_range[0].addEventListener("change",function(){
 },false)
 //________________________________________________________________________________
 let book_fu = $(".book_fu");
-let book_fu_logo = $('.book_fu img');
-for(let i = 0; i < 22;i++)
-{
+let book_fu_logo = $('.book_fu .book_choose_logo');
+for(let i = 0; i < book_fu_logo.length;i++){
   book_fu_logo[i].addEventListener('touchstart',function(){
-        if(book_fu_logo[i].src.match("Group108.png") && i%2 == 0)
-          {
+        if(book_fu_logo[i].src.match("Group108.png")){
             book_fu_logo[i].src = "img/%E4%B9%A6%E7%B1%8D/Group.png";
-            book_main_photo[0].style.backgroundImage = "url(img/书籍/"+book_p[i/2].innerHTML+".png";
-          }
+            book_main_photo[0].style.backgroundImage = "url(img/书籍/"+book_p[i].innerHTML+".png";
+        }
         else{
-          if(i%2 == 0)
           book_fu_logo[i].src = "img/%E4%B9%A6%E7%B1%8D/Group108.png";
         }
   },false);
 }
+//________________________________________________________________________________

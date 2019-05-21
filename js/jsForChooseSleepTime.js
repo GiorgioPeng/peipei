@@ -230,3 +230,29 @@ sleep_button[0].addEventListener('touchstart',function(){
   sleep.hide(500);
   sport.show(500);
 },false)
+//________________________________________________________________________________
+sleep_range = $("#sleep_range");
+sleep_range[0].addEventListener("change",function(){
+    switch (sleep_range.val()) {
+      case '0':
+        sleep_range.css("backgroundSize","0% 100%");
+        break;
+      case '1':
+        sleep_range.css("backgroundSize","20% 100%");
+        break;
+      case '2':
+        sleep_range.css("backgroundSize","40% 100%");
+        break;
+      case '3':
+        sleep_range.css("backgroundSize","60% 100%");
+        break;
+      case '4':
+        sleep_range.css("backgroundSize","80% 100%");
+        break;
+      case '5':
+        sleep_range.css("backgroundSize","100% 100%");
+        break;
+      default:
+
+    }
+},false)

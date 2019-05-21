@@ -94,23 +94,34 @@ for(let i = 0 ; i < area_choose_detail.length;i++){
 }
 
 
-let provence = $("#provence");
-let s_provence = $("#s_provence");
-let n_provence = $("#n_provence");
+let province = $("#province");
+let s_province = $("#s_province");
+let n_province = $("#n_province");
 let p_choose = $(".p_choose");
-let provence_text = $("#provence p");
-provence[0].addEventListener("touchstart",function(){
+let province_text = $("#province p");
+province[0].addEventListener("touchstart",function(){
   if(n_o_s_text.text()=="南方")
   {
-    s_provence.slideToggle();
+    s_province.slideDown();
   }
   if(n_o_s_text.text()=="北方")
   {
-    n_provence.slideToggle();
+    n_province.slideDown();
   }
 },false);
 for(let i = 0 ; i < p_choose.length;i++){
-  p_choose[i].addEventListener("touchstart",function(){
-    provence_text.text(p_choose[i].innerHTML);
+  p_choose[i].addEventListener("touchend",function(){
+    province_text.text(p_choose[i].innerHTML);
+  },false);
+  p_choose[i].addEventListener("click",function(){
+
+      if(n_o_s_text.text()=="南方")
+      {
+        s_province.slideUp();
+      }
+      if(n_o_s_text.text()=="北方")
+      {
+        n_province.slideUp();
+      }
   },false);
 }

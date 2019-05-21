@@ -37,7 +37,75 @@ sport_range[0].addEventListener("change",function(){
 
     }
 },false)
-
+var sport_value_detail = []
+$("input[name='sportsTypes']").change(function(){
+  if($(this).is(":checked")){
+    switch ($(this).val()) {
+      case 'running':
+        sport_value_detail.push(1);
+        break;
+      case 'badminton':
+        sport_value_detail.push(2);
+        break;
+      case 'basketball':
+        sport_value_detail.push(3);
+        break;
+      case 'football':
+        sport_value_detail.push(4);
+        break;
+      case 'bike':
+        sport_value_detail.push(5);
+        break;
+      case 'swimming':
+        sport_value_detail.push(6);
+        break;
+      case 'bodyBuilding':
+        sport_value_detail.push(7);
+        break;
+      case 'pingpangball':
+        sport_value_detail.push(8);
+        break;
+      case 'yoga':
+        sport_value_detail.push(9);
+        break;
+      default:
+        break;
+    }
+  }
+    else{
+    switch ($(this).val()) {
+      case 'running':
+        sport_value_detail.splice(sport_value_detail.indexOf(1),1)
+        break;
+      case 'badminton':
+        sport_value_detail.splice(sport_value_detail.indexOf(2),1)
+        break;
+      case 'basketball':
+        sport_value_detail.splice(sport_value_detail.indexOf(3),1)
+        break;
+      case 'football':
+        sport_value_detail.splice(sport_value_detail.indexOf(4),1)
+        break;
+      case 'bike':
+        sport_value_detail.splice(sport_value_detail.indexOf(5),1)
+        break;
+      case 'swimming':
+        sport_value_detail.splice(sport_value_detail.indexOf(6),1)
+        break;
+      case 'bodyBuilding':
+        sport_value_detail.splice(sport_value_detail.indexOf(7),1)
+        break;
+      case 'pingpangball':
+        sport_value_detail.splice(sport_value_detail.indexOf(8),1)
+        break;
+      case 'yoga':
+        sport_value_detail.splice(sport_value_detail.indexOf(9),1)
+        break;
+      default:
+        break;
+    }
+  }
+})
 sport_button = $('.sport_button');
 sport = $(".sport");
 book = $(".game");
